@@ -43,7 +43,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  padding: 220px 0 46px 0;
+  padding: 220px 0 320px 0;
 }
 .start-page-title-wrapper {
   width: 877px;
@@ -71,11 +71,18 @@
   line-height: 26px;
   letter-spacing: 0em;
   color: #ffffff;
+  padding-bottom: 46px;
 }
 .start-page-img-wrapper {
   padding: 0 370px 215px 0;
   display: flex;
   justify-content: flex-end;
+}
+.arrow-button {
+  width: 59px;
+  height: 59px;
+  background: url(./assets/arrow-button.svg) no-repeat center center;
+  background-size: cover;
 }
 
 .page2-content-block {

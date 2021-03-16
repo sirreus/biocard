@@ -34,6 +34,12 @@
     <div id="menu"></div>
 
     <div class="start-page _content-padding">
+        <script>
+          function goToNextPage() {
+            var y = $(window).scrollTop();
+            $('html, body').animate({ scrollTop: y + 965 })
+          }
+        </script>
         <div class="start-page-content-wrapper">
           <div class="start-page-title-wrapper">
             <p class="start-page-title">Мы помним, как все начиналось</p>
@@ -42,10 +48,8 @@
             <p class="start-page-text">
               В нашей истории было много замечательных моментов
             </p>
+            <div class="arrow-button" type="button" onclick="goToNextPage()"></div>
           </div>
-        </div>
-        <div class="start-page-img-wrapper">
-          <img class="arrow-button" src="./assets/arrow-button.svg" />
         </div>
     </div>
 
