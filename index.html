@@ -31,6 +31,8 @@
       var controller = new ScrollMagic.Controller();
     </script>
 
+    <div id="menu"></div>
+
     <div class="start-page _content-padding">
         <div class="start-page-content-wrapper">
           <div class="start-page-title-wrapper">
@@ -147,6 +149,7 @@
     </div>
 
     <div class="page _parallax-bg-man">
+      <div class="page4-gradient"></div>
       <div class="page4-content-block">
         <div id="page4-trigger1" class="spacer s0"></div>
         <div id="page4-trigger2" class="spacer s0"></div>
@@ -179,38 +182,31 @@
         var title2 = TweenMax.to("#page4-title2", 1, {className: "+=__visible"});
         var subtitle = TweenMax.to("#page4-subtitle", 1, {className: "+=__visible"});
         var text = TweenMax.to("#page4-text", 1, {className: "+=__visible"});
+        var textUp = TweenMax.to("#page4-text", 1, {className: "+=fishPage4TextUp"});
 
         // build scene
-        var scene1 = new ScrollMagic.Scene({triggerElement: "#page4-trigger1", duration: 600})
+        var scene1 = new ScrollMagic.Scene({triggerElement: "#page4-trigger1", duration: 450})
 					.setTween(title1)
-					.addIndicators({name: "show title1"}) // add indicators (requires plugin)
+					.addIndicators({name: "show title1"})
 					.addTo(controller);
-        var scene2 = new ScrollMagic.Scene({triggerElement: "#page4-trigger2", duration: 600})
+        var scene2 = new ScrollMagic.Scene({triggerElement: "#page4-trigger2", duration: 450})
 					.setTween(title2)
-					.addIndicators({name: "show title2"}) // add indicators (requires plugin)
+					.addIndicators({name: "show title2"})
 					.addTo(controller);
-        var scene3 = new ScrollMagic.Scene({triggerElement: "#page4-trigger2", duration: 400})
+        var scene3 = new ScrollMagic.Scene({triggerElement: "#page4-trigger2", duration: 250, offset: -20})
 					.setTween(subtitle)
-					.addIndicators({name: "show subtitle"}) // add indicators (requires plugin)
+					.addIndicators({name: "show subtitle"})
 					.addTo(controller);
-        var scene4 = new ScrollMagic.Scene({triggerElement: "#page4-trigger3", duration: 400})
+        var scene4 = new ScrollMagic.Scene({triggerElement: "#page4-trigger4", duration: 350})
 					.setTween(text)
-					.addIndicators({name: "show text"}) // add indicators (requires plugin)
+					.addIndicators({name: "show text"})
 					.addTo(controller);
         
         var titleBlock = document.getElementById("page4-title-block");
-        var scene5 = new ScrollMagic.Scene({triggerElement: "#page4-trigger4", duration: 200})
+
+        var scene5 = new ScrollMagic.Scene({triggerElement: "#page4-trigger3", duration: 200})
           .setPin(titleBlock)
-          .addIndicators({name: "text up"}) // add indicators (requires plugin)
-          .addTo(controller);
-        
-        var textBlock = document.getElementById("page4-text-wrapper");
-        var scene6 = new ScrollMagic.Scene({triggerElement: "#page4-trigger4", duration: 500, offset: -20})
-          .on("enter", function () {
-            textBlock.style.transform = "translateY(-300px)", 
-            textBlock.style.transition = "all 0.6s ease-out"
-          })
-          .addIndicators({name: "go up"}) // add indicators (requires plugin)
+          .addIndicators({name: "pin title"})
           .addTo(controller);
       </script>
     </div>

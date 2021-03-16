@@ -5,7 +5,7 @@
 .header {
   position: fixed;
   top: 0%;
-  z-index: 1;
+  z-index: 2;
 }
 .logo {
   position: relative;
@@ -225,10 +225,19 @@
 }
 
 ._parallax-bg-man {
+  position: relative;
   width: 100%;
-  height: 1721px;
+  height: 1922px;
   background: url(./assets/page2-photo3.png) no-repeat center top;
   background-size: cover;
+}
+.page4-gradient {
+  position: absolute;
+  bottom: -115px;
+  width: 100%;
+  height: 1422px;
+  background: linear-gradient(180deg, rgba(237, 237, 237, 0) 0%, #ededed 77.1%);
+  z-index: 1;
 }
 .page4-content-block {
   position: relative;
@@ -236,23 +245,23 @@
   height: 661px;
   padding: 745px 200px 120px 0;
   float: right;
+  z-index: 2;
 }
 #page4-trigger1 {
   position: absolute;
-  top: 700px;
+  top: 600px;
 }
 #page4-trigger2 {
   position: absolute;
-  top: 740px;
+  top: 640px;
 }
 #page4-trigger3 {
   position: absolute;
-  top: 840px;
+  top: 1000px;
 }
 #page4-trigger4 {
   position: absolute;
-  top: 1000px;
-  border: 3px solid red;
+  top: 1010px;
 }
 .page4-title1-wrapper {
   float: right;
@@ -292,9 +301,11 @@
   letter-spacing: 0em;
 }
 .page4-text-wrapper {
-  padding: 424px 0 0 115px;
+  position: relative;
+  padding: 205px 0 0 115px;
 }
 .page4-text {
+  /* position: absolute; */
   opacity: 0;
   margin: 0 0 0 0;
   font-family: "Biocad_Display-Regular";
@@ -302,6 +313,9 @@
   font-weight: 400;
   line-height: 35px;
   letter-spacing: 0em;
+}
+.fishPage4TextUp {
+  top: -25px;
 }
 .__visible {
   opacity: 1;
@@ -314,6 +328,7 @@
 .page5-content-wrapper {
   display: flex;
   flex-direction: row;
+  padding-top: 125px;
 }
 .page5-right-block {
   padding: 125px 0;
