@@ -5,17 +5,60 @@
 .header {
   position: fixed;
   top: 0%;
-  z-index: 2;
+  z-index: 5;
 }
 .logo {
   position: relative;
   display: block;
   margin: 49px 0 0 43px;
+  width: 127px;
+  height: 25px;
 }
-.burger {
+.burger-button {
   position: fixed;
   top: 48px;
   right: 62px;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  background: url(./assets/close-button.svg) no-repeat center center;
+  background-size: cover;
+}
+.__to-open {
+  background: url(./assets/burger.svg) no-repeat center center;
+}
+.__on-close {
+  background: url(./assets/close-button.svg) no-repeat center center;
+}
+
+.burger-menu {
+  position: fixed;
+  z-index: 4;
+  display: none;
+  justify-content: center;
+  width: 100%;
+  padding: 190px 0;
+  background-color: #f9f9f9;
+}
+.link-list {
+  width: 630px;
+  height: 585px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.link {
+  align-self: center;
+  padding: 5px 0;
+  font-family: "Biocad_Display-Bold";
+  font-size: 65px;
+  line-height: 115%;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #e8e8e8;
+}
+.link:hover {
+  color: #212121;
 }
 
 .start-page {
