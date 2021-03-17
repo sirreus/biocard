@@ -258,6 +258,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Весной 2001 дела в Институте иммунологии шли настолько плохо, что один
             из корпусов был выставлен на торги.
           </p>
+          <div id="page6-trigger1" class="spacer s0"></div>
           <div class="page6-text-wrapper">
             <p class="page6-text">
               Ведь, периодически Институт получал гранты от МНТЦ — международной
@@ -276,6 +277,14 @@
         </div>
         <div class="page6-people-in-lab-img"></div>
       </div>
+
+      <script>
+        var rotate = TweenMax.to(".page6-ngramma", 1, {rotation: 720, ease: Linear.easeNone});
+        var scene = new ScrollMagic.Scene({triggerElement: "#page6-trigger1", duration: 1000, pushFollowers: false})
+                .setTween(rotate)
+                .addIndicators({name: "rotate ngramme"})
+                .addTo(controller);
+    </script>
     </div>
 
     <div class="page">
@@ -291,6 +300,7 @@
 
     <div class="_darkblue">
         <div class="page9-content-block _content-padding">
+          <div id="page9-trigger1" class="spacer s0"></div>
           <div class="page9-left-block">
             <div class="page9-img-building-small"></div>
             <div class="page9-img-lady"></div>
@@ -321,6 +331,14 @@
               </div>
             </div>
           </div>
+
+          <script>
+            var rotate = TweenMax.to(".page9-ngramma", 1, {rotation: 720, ease: Linear.easeNone});
+            var scene = new ScrollMagic.Scene({triggerElement: "#page9-trigger1", duration: 1000, pushFollowers: false})
+                    .setTween(rotate)
+                    .addIndicators({name: "rotate ngramme"})
+                    .addTo(controller);
+        </script>
         </div>
 
         <div class="page10-content-block _content-padding">
