@@ -20,17 +20,35 @@
 
   <header>
     <script>
-      function toggleMenu () { 
-        var button = $("#menu-button")
-        button.toggleClass("__to-open")
-        if(button.hasClass("__to-open")) {
-          $("#menu").css("display", "none");
-          $(".logo").attr("src", "./assets/logo-white.svg");
-        } else {
-          $("#menu").css("display", "flex");
-          $(".logo").attr("src", "./assets/logo-black.svg");
-        }
-      }
+      // function toggleMenu () { 
+      //   var button = $("#menu-button")
+      //   button.toggleClass("__to-open")
+      //   if(button.hasClass("__to-open")) {
+      //     $("#menu").css("display", "none")
+      //     $(".logo").attr("src", "./assets/logo-white.svg");
+      //   } else {
+      //     $("#menu").css("display", "flex");
+      //     $(".logo").attr("src", "./assets/logo-black.svg");
+      //   }
+      // }
+
+      $(document).ready(function() {
+        $("#menu-button").click(function () {
+          console.log(1);
+          $(this).toggleClass("__to-open")
+
+          if($(this).hasClass("__to-open")) {
+            $("#menu").slideUp( "slow", function() {
+              $("#menu").css("display", "none");
+            });
+            $(".logo").attr("src", "./assets/logo-white.svg");
+          } else {
+            $("#menu").slideDown( "slow", function() {
+            });
+            $(".logo").attr("src", "./assets/logo-black.svg");
+          }
+        });
+      });
     </script>
     <div class="header">
       <img class="logo" src="./assets/logo-white.svg" />
@@ -60,7 +78,7 @@
         <script>
           function goToNextPage() {
             var y = $(window).scrollTop();
-            $('html, body').animate({ scrollTop: y + 965 })
+            $('html, body').animate({ scrollTop: y + 965 }, 'slow')
           }
         </script>
         <div class="start-page-content-wrapper">
