@@ -365,9 +365,6 @@
 .fishPage4TextUp {
   top: -25px;
 }
-.__visible {
-  opacity: 1;
-}
 .__movedUpText {
   transform: translateY(-400px);
   transition: all 0.6s ease-out;
@@ -514,7 +511,7 @@
 .page9-left-block {
   display: inline-block;
   flex-direction: column;
-  padding: 600px 0 102px 0;
+  padding: 125px 0;
 }
 .page9-img-building-small {
   width: 512px;
@@ -534,7 +531,7 @@
   flex-direction: column;
   width: 770px;
   height: 684px;
-  padding: 143px 0 93px 145px;
+  padding: 205px 0 93px 125px;
 }
 
 .page9-title {
@@ -575,67 +572,38 @@
 }
 
 .page10-content-block {
+  position: relative;
   padding: 354px 0;
 }
 .page10-text-wrapper {
   height: 192px;
   width: 814px;
   margin: auto;
-  padding-top: 900px;
 }
 .page10-text {
   font-family: "Biocad_Display-Regular";
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 400;
   line-height: 48px;
   letter-spacing: 0em;
   text-align: center;
   color: #ffffff;
-  transition: opacity 4s;
+  opacity: 0;
+  /* transition: opacity 4s; */
 }
 ._highlights {
   color: #62bdb0;
 }
-
-/* anima test */
-.__parallax {
-  height: 500px; /* fallback for older browsers */
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-perspective: 300px;
-  perspective: 300px;
-}
-.__parallax__group {
-  position: relative;
-  height: 500px; /* fallback for older browsers */
-  height: 100vh;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-.__parallax__layer {
+#page10-trigger1 {
   position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 350px;
 }
-.parallax__group {
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
+#page10-trigger2 {
+  position: absolute;
+  top: 450px;
 }
-.__parallax__layer--base {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  z-index: 4;
-}
-.__parallax__layer--back {
-  -webkit-transform: translateZ(-300px) scale(2);
-  transform: translateZ(-300px) scale(2);
-  z-index: 3;
-}
-.__parallax__layer--deep {
-  -webkit-transform: translateZ(-600px) scale(3);
-  transform: translateZ(-600px) scale(3);
-  z-index: 2;
+
+/* global style */
+.__visible {
+  opacity: 1;
 }

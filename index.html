@@ -2,11 +2,11 @@
 
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="font.css" />
-
-    <!-- <script type="text/javascript" src="script.js"></script> -->
+    <link rel="stylesheet" href="media.css" />
 
     <script type="text/javascript" src="http://scrollmagic.io/assets/js/lib/jquery.min.js"></script>
 	  <script type="text/javascript" src="http://scrollmagic.io/assets/js/lib/highlight.pack.js"></script>
@@ -19,41 +19,11 @@
   </head>
 
   <header>
-    <script>
-      // function toggleMenu () { 
-      //   var button = $("#menu-button")
-      //   button.toggleClass("__to-open")
-      //   if(button.hasClass("__to-open")) {
-      //     $("#menu").css("display", "none")
-      //     $(".logo").attr("src", "./assets/logo-white.svg");
-      //   } else {
-      //     $("#menu").css("display", "flex");
-      //     $(".logo").attr("src", "./assets/logo-black.svg");
-      //   }
-      // }
-
-      $(document).ready(function() {
-        $("#menu-button").click(function () {
-          console.log(1);
-          $(this).toggleClass("__to-open")
-
-          if($(this).hasClass("__to-open")) {
-            $("#menu").slideUp( "slow", function() {
-              $("#menu").css("display", "none");
-            });
-            $(".logo").attr("src", "./assets/logo-white.svg");
-          } else {
-            $("#menu").slideDown( "slow", function() {
-            });
-            $(".logo").attr("src", "./assets/logo-black.svg");
-          }
-        });
-      });
-    </script>
     <div class="header">
       <img class="logo" src="./assets/logo-white.svg" />
-      <div type="button" id="menu-button" class="burger-button __to-open" onclick="toggleMenu()"></div>
+      <div type="button" id="menu-button" class="burger-button __to-open"></div>
     </div>
+
   </header>
 
   <body>
@@ -319,13 +289,13 @@
       </div>
     </div>
 
-    <div class="_darkblue __parallax">
-        <div class="page9-content-block _content-padding __parallax__group">
-          <div class="page9-left-block __parallax__layer--base">
+    <div class="_darkblue">
+        <div class="page9-content-block _content-padding">
+          <div class="page9-left-block">
             <div class="page9-img-building-small"></div>
             <div class="page9-img-lady"></div>
           </div>
-          <div class="page9-right-block __parallax__layer--back">
+          <div class="page9-right-block">
             <p class="page9-title">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8
               ноября 2001 года подписано соглашение между Институтом иммунологии
@@ -353,9 +323,11 @@
           </div>
         </div>
 
-        <div class="page10-content-block _content-padding __parallax__group">
-          <div class="page10-text-wrapper __parallax__layer--deep">
-            <p class="page10-text">
+        <div class="page10-content-block _content-padding">
+          <div id="page10-trigger1" class="spacer s0"></div>
+          <div id="page10-trigger2" class="spacer s0"></div>
+          <div id="page10-text-wrapper" class="page10-text-wrapper">
+            <p id="page10-text" class="page10-text">
               А пока до выпуска
               <span class="_highlights">Генферона</span> оставалось ещё
               несколько лет, мы занялись
@@ -363,8 +335,43 @@
               собственного производства в Петрово-Дальнем.
             </p>
           </div>
+
+          <script>
+            var text = TweenMax.to("#page10-text", 1, {className: "+=__visible"});
+            var scene1 = new ScrollMagic.Scene({triggerElement: "#page10-trigger1", duration: 200})
+              .setTween(text)
+              .addIndicators({name: "show text"})
+              .addTo(controller);
+
+            var textBlock = document.getElementById("page10-text-wrapper");
+            var scene2 = new ScrollMagic.Scene({triggerElement: "#page10-trigger1", duration: 300, offset: 100})
+              .setPin(textBlock)
+              .addIndicators({name: "pin text"})
+              .addTo(controller);
+          </script>
         </div>
     </div>
+
+
+    <script id="toggle-open-burger-menu">
+      $(document).ready(function() {
+        $("#menu-button").click(function () {
+          console.log(1);
+          $(this).toggleClass("__to-open")
+
+          if($(this).hasClass("__to-open")) {
+            $("#menu").slideUp( "slow", function() {
+              $("#menu").css("display", "none");
+            });
+            $(".logo").attr("src", "./assets/logo-white.svg");
+          } else {
+            $("#menu").slideDown( "slow", function() {
+            });
+            $(".logo").attr("src", "./assets/logo-black.svg");
+          }
+        });
+      });
+    </script>
 
   </body>
 </html>
