@@ -27,9 +27,6 @@
 .__to-open {
   background: url(./assets/burger.svg) no-repeat center center;
 }
-.__on-close {
-  background: url(./assets/close-button.svg) no-repeat center center;
-}
 
 .burger-menu {
   position: fixed;

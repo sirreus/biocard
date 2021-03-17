@@ -21,17 +21,15 @@
   <header>
     <script>
       function toggleMenu () { 
-        $("#menu-button").click(function () {
-          $(this).toggleClass("__to-open")
-
-          if($(this).hasClass("__to-open")) {
-            $("#menu").css("display", "none");
-            $(".logo").attr("src", "./assets/logo-white.svg");
-          } else {
-            $("#menu").css("display", "flex");
-            $(".logo").attr("src", "./assets/logo-black.svg");
-          }
-        });
+        var button = $("#menu-button")
+        button.toggleClass("__to-open")
+        if(button.hasClass("__to-open")) {
+          $("#menu").css("display", "none");
+          $(".logo").attr("src", "./assets/logo-white.svg");
+        } else {
+          $("#menu").css("display", "flex");
+          $(".logo").attr("src", "./assets/logo-black.svg");
+        }
       }
     </script>
     <div class="header">
@@ -47,14 +45,6 @@
     </script>
 
     <div id="menu" class="burger-menu">
-      <script>
-        function closeMenu () {
-          $("#close-menu-button").click(function () {
-            $("#menu").css("display", "none");
-          });
-        }
-      </script>
-      <!-- <div type="button" id="close-menu-button" class="close-button" onclick="closeMenu()"></div> -->
       <div class="link-list">
         <a class="link">рождение BIOCARD</a>
         <a class="link">набирая обороты</a>
