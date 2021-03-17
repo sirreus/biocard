@@ -97,6 +97,45 @@
 
       <script>
         // build scene
+        if($(window).width() >= 500) {
+          var photo1 = document.getElementById("page2-photo1");
+          var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger1"})
+            // trigger animation by changing inline style.  
+            .on("enter", function () {photo1.style.opacity = "1";})
+            // reset style
+            .on("leave", function () {photo1.style.opacity = "0";})
+            .addIndicators() // add indicators (requires plugin)
+            .addTo(controller);
+
+          var photo2 = document.getElementById("page2-photo2");
+          var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger2"})
+            // trigger animation by changing inline style.  
+            .on("enter", function () {photo2.style.opacity = "1";})
+            // reset style
+            .on("leave", function () {photo2.style.opacity = "0";})
+            .addIndicators() // add indicators (requires plugin)
+            .addTo(controller);
+
+          var photo3 = document.getElementById("page2-photo3");
+          var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger3"})
+            // trigger animation by changing inline style.  
+            .on("enter", function () {photo3.style.opacity = "1";})
+            // reset style
+            .on("leave", function () {photo3.style.opacity = "0";})
+            .addIndicators() // add indicators (requires plugin)
+            .addTo(controller);
+          
+          var img = document.getElementById("page2-img-wrapper");
+          var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger2", duration: 500})
+            .setPin("#page2-title-wrapper")
+            .on("enter", function () {img.style.position = "absolute", img.style.left = "232px";})
+            .addIndicators({name: "text up"}) // add indicators (requires plugin)
+            .addTo(controller);
+        }
+      </script>
+
+      <!-- <script>
+        // build scene
         var photo1 = document.getElementById("page2-photo1");
         var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger1"})
           // trigger animation by changing inline style.  
@@ -130,7 +169,7 @@
           .on("enter", function () {img.style.position = "absolute", img.style.left = "232px";})
           .addIndicators({name: "text up"}) // add indicators (requires plugin)
           .addTo(controller);
-      </script>
+      </script> -->
 
     </div>
 
