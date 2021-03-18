@@ -34,8 +34,8 @@
 
     <div id="menu" class="burger-menu">
       <div class="link-list">
-        <a class="link">рождение BIOCARD</a>
-        <a class="link">набирая обороты</a>
+        <a class="link" href="#step1">рождение BIOCARD<sup class="link-year">2001</sup></a>
+        <a class="link">набирая обороты<sup class="link-year">2004-2010</sup></a>
         <a class="link">новые горизонты</a>
         <a class="link">экспансия</a>
         <a class="link">наука и бизнес</a>
@@ -128,7 +128,7 @@
       </script>
     </div>
 
-    <div id="page3" class="page page3-content-block _grey">
+    <div id="step1" class="page page3-content-block _grey">
       <div id="page3-trigger1" class="spacer s0"></div>
       <div id="page3-content-wrapper">
         <div id="page3-title-wrapper1" class="page3-title-wrapper1">
@@ -370,7 +370,6 @@
     <script id="toggle-open-burger-menu">
       $(document).ready(function() {
         $("#menu-button").click(function () {
-          console.log(1);
           $(this).toggleClass("__to-open")
 
           if($(this).hasClass("__to-open")) {
@@ -382,6 +381,21 @@
             $("#menu").slideDown( "slow", function() {
             });
             $(".logo").attr("src", "./assets/logo-black.svg");
+          }
+        });
+      });
+    </script>
+
+    <script id="hide-burger-menu-by-click-on-link">
+      $(document).ready(function() {
+        $(".link").click(function () {
+          $("#menu-button").toggleClass("__to-open")
+
+          if($("#menu-button").hasClass("__to-open")) {
+            $("#menu").slideUp( "slow", function() {
+              $("#menu").css("display", "none");
+            });
+            $(".logo").attr("src", "./assets/logo-white.svg");
           }
         });
       });
