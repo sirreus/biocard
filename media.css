@@ -77,11 +77,20 @@ html {
     }
 
     .page3-title-wrapper1 {
-        top: 200px;
+        top: 70px;
     }
 
     .page3-title-wrapper2 {
-        bottom: 220px;
+        bottom: 50px;
+        right: -140%;
+    }
+
+    .fishLeftFull {
+        right: 1780px;
+    }
+
+    ._parallax-bg-man {
+        height: 1400px;
     }
 
     .page4-content-block {
@@ -119,6 +128,11 @@ html {
     .page5-text {
         font-size: 18px;
         line-height: 27px
+        margin: 0;
+    }
+
+    .page5-img {
+        width: 100%;
     }
 
     .page6-subtitle {
@@ -136,11 +150,24 @@ html {
     }
 
     .page6-left-block {
-        padding: 50px 0 125px;
+        padding: 0 0 10vh;
     }
 
     .page6-text-wrapper {
         margin-right: 130px;
+        padding-top: 30px;
+    }
+
+    .page7-top-svg {
+        transform: translateX(-3150px);
+    }
+
+    .fishRightPage7 {
+        transform: translateX(-31%);
+    }
+
+    .fishLeftPage7 {
+        transform: translateX(-34.5%);
     }
 
     .page9-subtitle {
@@ -153,18 +180,30 @@ html {
     }
 
     .page9-text {
-        font-size: 18px;
-        line-height: 27px
+        font-size: 20px;
+        line-height: 32px;
     }
 
-    .page9-text {
-        font-size: 26px;
-        line-height: 34px;
+    .page9-inner-text-wrapper {
+        height: auto;
+        width: 35vw;
+    }
+
+    .page9-right-block {
+        display: inline-block;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        padding: 20vh 0 93px 5vw;
     }
 
     .page9-ngramma {
         margin-left: 60px;
         margin-right: 60px;
+    }
+
+    .page10-content-block._content-padding {
+        padding: 50vh 60px;
     }
 
     .page10-text {
@@ -237,11 +276,21 @@ html {
     }
 
     .page3-title-wrapper1 {
-        top: 140px;
+        top: 40px;
+        left: -78%;
     }
 
     .page3-title-wrapper2 {
-        bottom: 200px;
+        bottom: 50px;
+        right: -145%;
+    }
+
+    .fishRightFull {
+        left: 1780px;
+    }
+
+    .fishLeftFull {
+        right: 1780px;
     }
 
     .page4-content-block {
@@ -279,10 +328,16 @@ html {
     .page5-text {
         font-size: 18px;
         line-height: 27px
+        height: auto;
+        margin: 0;
     }
 
     .page5-woman-img {
         width: 550px;
+    }
+
+    .page5-right-block {
+        padding: 125px 0 80px;
     }
 
     .page6-subtitle {
@@ -305,25 +360,54 @@ html {
 
     .page6-text-wrapper {
         margin-right: 100px;
+        padding-top: 0;
+    }
+
+    .page7-top-svg {
+        transform: translateX(-3150px);
+    }
+
+    .fishRightPage7 {
+        transform: translateX(-31%);
+    }
+
+    .fishLeftPage7 {
+        transform: translateX(-35.3%);
     }
 
     .page9-subtitle {
         font-size: 16px;
     }
 
-    .page9-title {
-        font-size: 30px;
-        line-height: 36px;
-    }
-
     .page9-text {
-        font-size: 26px;
-        line-height: 34px;
+        font-size: 18px;
+        line-height: 28px;
     }
 
     .page9-ngramma {
         margin-left: 60px;
         margin-right: 60px;
+    }
+
+    .page9-title {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .page9-right-block {
+        display: inline-block;
+        flex-direction: column;
+        width: 60vw;
+        height: auto;
+        padding: 16vh 0 10vh 5vw;
+    }
+
+    .page9-inner-text-wrapper {
+        width: 35vw;
+    }
+
+    .page10-content-block._content-padding {
+        padding: 50vh 60px;
     }
 
     .page10-text {
@@ -399,22 +483,22 @@ html {
         padding: 100px 0 150px 0;
     }
 
-    .page3-title-text1 {
-        font-size: 200px;
-        line-height: 190px;
-    }
-
-    .page3-title-text2 {
-        font-size: 200px;
-        line-height: 190px;
-    }
-
     .page3-title-wrapper1 {
-        top: 130px;
+        top: 20px;
+        left: -130%;
     }
 
     .page3-title-wrapper2 {
-        bottom: 200px;
+        bottom: 20px;
+        right: -195%;
+    }
+
+    .fishRightFull {
+        left: 1780px;
+    }
+
+    .fishLeftFull {
+        right: 1780px;
     }
 
     .page4-title2-wrapper {
@@ -443,6 +527,21 @@ html {
         justify-content: flex-end;
     }
 
+    .page4-text-wrapper {
+        position: relative;
+        padding: 40px 0 0 115px;
+    }
+
+    .page5-right-block {
+        padding: 100px 0;
+        width: 45vw;
+        margin-right: 5vw;
+    }
+
+    .page5-img {
+        width: 100%;
+    }
+
     .page5-subtitle {
         font-size: 16px;
     }
@@ -454,7 +553,10 @@ html {
 
     .page5-text {
         font-size: 18px;
-        line-height: 27px
+        line-height: 27px;
+        width: auto;
+        margin: 0;
+        height: auto;
     }
 
     .page5-woman-img {
@@ -468,6 +570,16 @@ html {
     .page6-title {
         font-size: 30px;
         line-height: 36px;
+        width: auto;
+    }
+
+    .page6-text-wrapper {
+        padding-top: 40px;
+        padding-right: 40px;
+        margin-bottom: 27px;
+        height: 426px;
+        width: auto;
+        align-self: flex-end;
     }
 
     .page6-text {
@@ -475,27 +587,70 @@ html {
         line-height: 27px
     }
 
-    .page6-left-block {
-        padding: 20px 0 125px;
+    .page6-left-block { 
+        padding: 20px 0 10vh;
+        width: 50vw;
+        margin: 0;
+    }
+
+    .page7-top-svg {
+        transform: translateX(-3150px);
+    }
+
+    .fishRightPage7 {
+        transform: translateX(-31%);
+    }
+
+    .fishLeftPage7 {
+        transform: translateX(-39%);
+    }
+
+    .page9-img-building-small {
+        width: 30vw;
+    }
+
+    .page9-img-lady {
+        width: 30vw;
     }
 
     .page9-subtitle {
         font-size: 16px;
     }
 
-    .page9-title {
-        font-size: 30px;
-        line-height: 36px;
-    }
-
     .page9-text {
         font-size: 18px;
-        line-height: 27px
+        line-height: 28px;
     }
 
-    .page9-text {
-        font-size: 30px;
-        line-height: 36px
+    .page9-ngramma {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .page9-title {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .page9-right-block {
+        display: inline-block;
+        flex-direction: column;
+        width: 60vw;
+        height: auto;
+        padding: 16vh 0 10vh 5vw;
+    }
+
+    .page9-inner-text-wrapper {
+        width: 35vw;
+    }
+
+    .page10-content-block._content-padding {
+        padding: 50vh 60px;
+    }
+
+    .page10-text {
+        font-size: 26px;
+        line-height: 34px;
     }
 
 }
