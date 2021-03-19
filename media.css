@@ -1058,4 +1058,18 @@ html {
         margin: 5vh 0 0;
     }
 
+    .page10-content-block._content-padding {
+        padding: 50vh 60px;
+    }
+
+    .page10-text-wrapper {
+        height: auto;
+        width: auto;
+    }
+
+    #page10-text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
 }
