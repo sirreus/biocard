@@ -510,7 +510,7 @@
   height: 1388px;
 }
 .zoomed {
-  transform: scale(30) translateY(-23px) translateX(16px);
+  transform: scale(30) translateY(-1.5%) translateX(1.5%);
 }
 .page7-top-svg {
   transform: translateX(-2980px);
@@ -646,10 +646,10 @@
   right: 1780px;
 }
 .fishRightPage7 {
-  transform: translateX(-1490px);
+  transform: translateX(-31%);
 }
 .fishLeftPage7 {
-  transform: translateX(-1470px);
+  transform: translateX(-31%);
 }
 .continueFloatingLeft {
   right: 0px;
