@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="font.css" />
     <link rel="stylesheet" href="media.css" />
 
-    <script type="text/javascript" src="http://scrollmagic.io/assets/js/lib/jquery.min.js"></script>
-	  <script type="text/javascript" src="http://scrollmagic.io/assets/js/lib/highlight.pack.js"></script>
-	  <script type="text/javascript" src="http://scrollmagic.io/assets/js/lib/modernizr.custom.min.js"></script>
-	  <script type="text/javascript" src="http://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
-	  <script type="text/javascript" src="http://scrollmagic.io/scrollmagic/uncompressed/ScrollMagic.js"></script>
-	  <script type="text/javascript" src="http://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-    <script type="text/javascript" src="http://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.velocity.js"></script>
-	  <script type="text/javascript" src="http://scrollmagic.io/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+    <script type="text/javascript" src="animation-libs/jquery.min.js"></script>
+	  <script type="text/javascript" src="animation-libs/highlight.pack.js"></script>
+	  <script type="text/javascript" src="animation-libs/modernizr.custom.min.js"></script>
+	  <script type="text/javascript" src="animation-libs/TweenMax.min.js"></script>
+	  <script type="text/javascript" src="animation-libs/ScrollMagic.js"></script>
+	  <script type="text/javascript" src="animation-libs/animation.gsap.js"></script>
+    <script type="text/javascript" src="animation-libs/animation.velocity.js"></script>
+	  <script type="text/javascript" src="animation-libs/debug.addIndicators.js"></script>
   </head>
 
   <header>
@@ -147,13 +147,13 @@
             .addIndicators({name: "pin content"})
             .addTo(controller);
 
-        var tweenLeft = TweenMax.to("#page3-title-wrapper1", 1, {className: "+=fishRight"});
+        var tweenLeft = TweenMax.to("#page3-title-wrapper1", 1, {className: "+=fishRightFull"});
         var scene2 = new ScrollMagic.Scene({triggerElement: "#page3-trigger1", duration: 500, offset: 50})
           .setTween(tweenLeft)
           .addIndicators({name: "go to right"})
           .addTo(controller);
 
-        var tweenRight = TweenMax.to("#page3-title-wrapper2", 1, {className: "+=fishLeft"});
+        var tweenRight = TweenMax.to("#page3-title-wrapper2", 1, {className: "+=fishLeftFull"});
         var scene3 = new ScrollMagic.Scene({triggerElement: "#page3-trigger1", duration: 500, offset: 50})
           .setTween(tweenRight)
           .addIndicators({name: "go to left"})
@@ -284,13 +284,46 @@
     </div>
 
     <div class="page">
-      <div class="page7-content-block">
-        <div class="page7-img-autumn-2001"></div>
-        <div class="page7-img-building"></div>
+      <div id="page7" class="page7-content-block">
+        <div id="page7-trigger1" class="spacer s0"></div>
+        <div id="page7-trigger2" class="spacer s0"></div>
+        <div id="page7-content-wrapper">
+          <div id="page7-animated-block">
+            <div class="page7-top-svg"></div>
+            <div class="page7-bottom-svg"></div>
+          </div>
+        </div>
       </div>
 
+      <script>
+        var content = document.getElementById("page7-content-wrapper");
+        var scene1 = new ScrollMagic.Scene({triggerElement: "#page7-trigger1", duration: 920, offset: 500})
+            .setPin(content)
+            .addIndicators({name: "pin page"})
+            .addTo(controller);
+        
+        var tweenLeft = TweenMax.to(".page7-top-svg", 1, {className: "+=fishRightPage7"});
+        var scene2 = new ScrollMagic.Scene({triggerElement: "#page7-trigger1", duration: 200, offset: 500})
+          .setTween(tweenLeft)
+          .addIndicators({name: "go to right"})
+          .addTo(controller);
+
+        var tweenRight = TweenMax.to(".page7-bottom-svg", 1, {className: "+=fishLeftPage7"});
+        var scene3 = new ScrollMagic.Scene({triggerElement: "#page7-trigger1", duration: 200, offset: 500})
+          .setTween(tweenRight)
+          .addIndicators({name: "go to left"})
+          .addTo(controller);
+        
+        var animatedBlock = document.getElementById("page7-animated-block")
+        var zoomed = TweenMax.to(animatedBlock, 1, {className: "+=zoomed"});
+        var pinSceneIntro = new ScrollMagic.Scene({triggerElement: '#page7-trigger2', duration: 800})
+          .setTween(zoomed)
+          .addIndicators({name: "zoom"})
+          .addTo(controller)
+      </script>
+
       <div class="page8-content-block">
-        <div class="page7-img-building"></div>
+        <div class="page8-img-building"></div>
       </div>
     </div>
 
@@ -365,7 +398,6 @@
           </script>
         </div>
     </div>
-
 
     <script id="toggle-open-burger-menu">
       $(document).ready(function() {
