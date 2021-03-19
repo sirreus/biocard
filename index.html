@@ -190,35 +190,98 @@
       </div>
 
       <script>
-        var title1 = TweenMax.to("#page4-title1", 1, {className: "+=__visible"});
-        var scene1 = new ScrollMagic.Scene({triggerElement: "#page4-trigger1", duration: 450})
-					.setTween(title1)
-					.addIndicators({name: "show title1"})
-					.addTo(controller);
+        if($(window).width() >= 500) {
+          var title1 = TweenMax.to("#page4-title1", 1, {className: "+=__visible"});
+          var scene1 = new ScrollMagic.Scene({triggerElement: "#page4-trigger1", duration: 450})
+            .setTween(title1)
+            .addIndicators({name: "show title1"})
+            .addTo(controller);
 
-        var title2 = TweenMax.to("#page4-title2", 1, {className: "+=__visible"});
-        var scene2 = new ScrollMagic.Scene({triggerElement: "#page4-trigger2", duration: 450})
-					.setTween(title2)
-					.addIndicators({name: "show title2"})
-					.addTo(controller);
+          var title2 = TweenMax.to("#page4-title2", 1, {className: "+=__visible"});
+          var scene2 = new ScrollMagic.Scene({triggerElement: "#page4-trigger2", duration: 450})
+            .setTween(title2)
+            .addIndicators({name: "show title2"})
+            .addTo(controller);
 
-        var subtitle = TweenMax.to("#page4-subtitle", 1, {className: "+=__visible"});
-        var scene3 = new ScrollMagic.Scene({triggerElement: "#page4-trigger2", duration: 250, offset: -20})
-					.setTween(subtitle)
-					.addIndicators({name: "show subtitle"})
-					.addTo(controller);
+          var subtitle = TweenMax.to("#page4-subtitle", 1, {className: "+=__visible"});
+          var scene3 = new ScrollMagic.Scene({triggerElement: "#page4-trigger2", duration: 250, offset: -20})
+            .setTween(subtitle)
+            .addIndicators({name: "show subtitle"})
+            .addTo(controller);
 
-        var text = TweenMax.to("#page4-text", 1, {className: "+=__visible"});
-        var scene4 = new ScrollMagic.Scene({triggerElement: "#page4-trigger4", duration: 350})
-					.setTween(text)
-					.addIndicators({name: "show text"})
-					.addTo(controller);
-        
-        var titleBlock = document.getElementById("page4-title-block");
-        var scene5 = new ScrollMagic.Scene({triggerElement: "#page4-trigger3", duration: 200})
-          .setPin(titleBlock)
-          .addIndicators({name: "pin title"})
-          .addTo(controller);
+          var text = TweenMax.to("#page4-text", 1, {className: "+=__visible"});
+          var scene4 = new ScrollMagic.Scene({triggerElement: "#page4-trigger4", duration: 350})
+            .setTween(text)
+            .addIndicators({name: "show text"})
+            .addTo(controller);
+          
+          var titleBlock = document.getElementById("page4-title-block");
+          var scene5 = new ScrollMagic.Scene({triggerElement: "#page4-trigger3", duration: 200})
+            .setPin(titleBlock)
+            .addIndicators({name: "pin title"})
+            .addTo(controller);
+        } else if(($(window).width() >= 1050) && ($(window).width() <= 1380)) {
+          var title1 = TweenMax.to("#page4-title1", 1, {className: "+=__visible"});
+          var scene1 = new ScrollMagic.Scene({triggerElement: "#page4-trigger1", duration: 450, offset: -250})
+            .setTween(title1)
+            .addIndicators({name: "show title1"})
+            .addTo(controller);
+
+          var title2 = TweenMax.to("#page4-title2", 1, {className: "+=__visible"});
+          var scene2 = new ScrollMagic.Scene({triggerElement: "#page4-trigger2", duration: 450, offset: -250})
+            .setTween(title2)
+            .addIndicators({name: "show title2"})
+            .addTo(controller);
+
+          var subtitle = TweenMax.to("#page4-subtitle", 1, {className: "+=__visible"});
+          var scene3 = new ScrollMagic.Scene({triggerElement: "#page4-trigger2", duration: 250, offset: -130})
+            .setTween(subtitle)
+            .addIndicators({name: "show subtitle"})
+            .addTo(controller);
+
+          var text = TweenMax.to("#page4-text", 1, {className: "+=__visible"});
+          var scene4 = new ScrollMagic.Scene({triggerElement: "#page4-trigger4", duration: 350, offset: -220})
+            .setTween(text)
+            .addIndicators({name: "show text"})
+            .addTo(controller);
+          
+          var titleBlock = document.getElementById("page4-title-block");
+          var scene5 = new ScrollMagic.Scene({triggerElement: "#page4-trigger3", duration: 200, offset: -350})
+            .setPin(titleBlock)
+            .addIndicators({name: "pin title"})
+            .addTo(controller);
+        } else {
+
+          var title1 = TweenMax.to("#page4-title1", 1, {className: "+=__visible"});
+          var scene1 = new ScrollMagic.Scene({triggerElement: "#page4-trigger1", duration: 450, offset: -300})
+            .setTween(title1)
+            .addIndicators({name: "show title1"})
+            .addTo(controller);
+
+          var title2 = TweenMax.to("#page4-title2", 1, {className: "+=__visible"});
+          var scene2 = new ScrollMagic.Scene({triggerElement: "#page4-trigger2", duration: 450, offset: -300})
+            .setTween(title2)
+            .addIndicators({name: "show title2"})
+            .addTo(controller);
+
+          var subtitle = TweenMax.to("#page4-subtitle", 1, {className: "+=__visible"});
+          var scene3 = new ScrollMagic.Scene({triggerElement: "#page4-trigger2", duration: 250, offset: -150})
+            .setTween(subtitle)
+            .addIndicators({name: "show subtitle"})
+            .addTo(controller);
+
+          var text = TweenMax.to("#page4-text", 1, {className: "+=__visible"});
+          var scene4 = new ScrollMagic.Scene({triggerElement: "#page4-trigger4", duration: 350, offset: -250})
+            .setTween(text)
+            .addIndicators({name: "show text"})
+            .addTo(controller);
+          
+          var titleBlock = document.getElementById("page4-title-block");
+          var scene5 = new ScrollMagic.Scene({triggerElement: "#page4-trigger3", duration: 200, offset: -400})
+            .setPin(titleBlock)
+            .addIndicators({name: "pin title"})
+            .addTo(controller);
+        }
       </script>
     </div>
 
@@ -314,12 +377,21 @@
           .addIndicators({name: "go to left"})
           .addTo(controller);
         
-        var animatedBlock = document.getElementById("page7-animated-block")
-        var zoomed = TweenMax.to(animatedBlock, 1, {className: "+=zoomed"});
-        var pinSceneIntro = new ScrollMagic.Scene({triggerElement: '#page7-trigger2', duration: 800})
-          .setTween(zoomed)
-          .addIndicators({name: "zoom"})
-          .addTo(controller)
+        if($(window).width() >= 500) {
+          var animatedBlock = document.getElementById("page7-animated-block")
+          var zoomed = TweenMax.to(animatedBlock, 1, {className: "+=zoomed"});
+          var pinSceneIntro = new ScrollMagic.Scene({triggerElement: '#page7-trigger2', duration: 800})
+            .setTween(zoomed)
+            .addIndicators({name: "zoom"})
+            .addTo(controller)
+        } else {
+          var animatedBlock = document.getElementById("page7-animated-block")
+          var zoomed = TweenMax.to(animatedBlock, 1, {className: "+=zoomed"});
+          var pinSceneIntro = new ScrollMagic.Scene({triggerElement: '#page7-trigger2', duration: 1000})
+            .setTween(zoomed)
+            .addIndicators({name: "zoom"})
+            .addTo(controller)
+        }
       </script>
 
       <div class="page8-content-block">
@@ -362,11 +434,20 @@
           </div>
 
           <script>
-            var rotate = TweenMax.to(".page9-ngramma", 1, {rotation: 720, ease: Linear.easeNone});
-            var scene = new ScrollMagic.Scene({triggerElement: "#page9-trigger1", duration: 1000, pushFollowers: false})
-                    .setTween(rotate)
-                    .addIndicators({name: "rotate ngramme"})
-                    .addTo(controller);
+            if($(window).width() >= 500) {
+              var rotate = TweenMax.to(".page9-ngramma", 1, {rotation: 720, ease: Linear.easeNone});
+              var scene = new ScrollMagic.Scene({triggerElement: "#page9-trigger1", duration: 1000, pushFollowers: false})
+                      .setTween(rotate)
+                      .addIndicators({name: "rotate ngramme"})
+                      .addTo(controller);
+            } else {
+              var rotate = TweenMax.to(".page9-ngramma", 1, {rotation: 720, ease: Linear.easeNone});
+              var scene = new ScrollMagic.Scene({triggerElement: "#page9-trigger1", duration: 1500, pushFollowers: false})
+                      .setTween(rotate)
+                      .addIndicators({name: "rotate ngramme"})
+                      .addTo(controller);
+
+            }
           </script>
         </div>
 
