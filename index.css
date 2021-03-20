@@ -146,17 +146,21 @@
   flex-direction: row;
   position: relative;
 }
+#page2-trigger0 {
+  position: absolute;
+  top: 30%;
+}
 #page2-trigger1 {
   position: absolute;
-  top: 250px;
+  top: 32%;
 }
 #page2-trigger2 {
   position: absolute;
-  top: 500px;
+  top: 42%;
 }
 #page2-trigger3 {
   position: absolute;
-  top: 700px;
+  top: 54%;
 }
 .page2-title-wrapper {
   padding-bottom: 126.5px;
@@ -179,7 +183,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 635px;
+  width: 458px;
   height: 387px;
 }
 .page2-photo1 {
@@ -290,10 +294,11 @@
   height: 1922px;
   background: url(./assets/page2-photo3.png) no-repeat center top;
   background-size: cover;
+  padding-bottom: 246px;
 }
 .page4-gradient {
   position: absolute;
-  bottom: -115px;
+  bottom: 0px;
   width: 100%;
   height: 1422px;
   background: linear-gradient(180deg, rgba(237, 237, 237, 0) 0%, #ededed 77.1%);
@@ -301,29 +306,30 @@
 }
 .page4-content-block {
   position: relative;
-  width: 804px;
-  height: 661px;
-  padding: 745px 200px 120px 0;
+  width: 872px;
+  height: 676px;
+  padding: 42% 5% 0 0;
   float: right;
   z-index: 2;
 }
 #page4-trigger1 {
   position: absolute;
-  top: 600px;
+  top: 47%;
 }
 #page4-trigger2 {
   position: absolute;
-  top: 640px;
+  top: 50%;
 }
 #page4-trigger3 {
   position: absolute;
-  top: 1000px;
+  top: 73%;
 }
 #page4-trigger4 {
   position: absolute;
-  top: 1010px;
+  top: 65%;
 }
 .page4-title1-wrapper {
+  margin-right: 60px;
   float: right;
 }
 .page4-title1-text {
@@ -339,7 +345,7 @@
   display: flex;
   align-items: center;
   height: 134px;
-  width: 820px;
+  width: 815px;
 }
 .page4-title2-text {
   opacity: 0;
@@ -353,7 +359,7 @@
 .page4-subtitle {
   opacity: 0;
   margin: 0 0 0 0;
-  padding-top: 25px;
+  padding-top: 10px;
   font-family: "Biocad_Display-Regular";
   font-size: 16px;
   font-weight: 400;
@@ -362,24 +368,27 @@
 }
 .page4-text-wrapper {
   position: relative;
-  padding: 205px 0 0 115px;
+  padding: 190px 0 0 115px;
 }
 .page4-text {
   opacity: 0;
   margin: 0 0 0 0;
   font-family: "Biocad_Display-Regular";
   font-size: 25px;
-  font-weight: 400;
-  line-height: 35px;
+  font-weight: normal;
+  line-height: 140%;
   letter-spacing: 0em;
 }
 
+._pr75 {
+  padding-right: 75px;
+}
 .page5-content-wrapper {
   display: flex;
   flex-direction: row;
   padding-top: 125px;
 }
-.page5-right-block {
+.page5-left-block {
   padding: 125px 0;
   display: flex;
   flex-direction: column;
@@ -435,7 +444,7 @@
   height: 544px;
   width: 634px;
   align-self: center;
-  margin: auto;
+  margin: 0 0 0 auto;
   background: url(./assets/woman-in-lab.png) no-repeat center center;
   background-size: cover;
 }
@@ -457,21 +466,21 @@
   height: 144px;
   width: 893px;
   font-family: "Biocad_Display-Regular";
-  font-size: 40px;
+  font-size: 37px;
   font-weight: 400;
   line-height: 48px;
   letter-spacing: 0em;
 }
 .page6-text-wrapper {
-  padding-top: 82px;
+  padding: 82px 75px 0 0;
   height: 386px;
-  width: 547px;
+  width: 510px;
   align-self: flex-end;
 }
 .page6-text {
   padding-top: 30px;
   font-family: "Biocad_Display-Regular";
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0em;
@@ -640,10 +649,10 @@
   opacity: 1;
 }
 .fishRightFull {
-  left: 1780px;
+  left: 1430px;
 }
 .fishLeftFull {
-  right: 1780px;
+  right: 90%;
 }
 .fishRightPage7 {
   transform: translateX(-31%);
