@@ -348,6 +348,7 @@
 
     <div class="page">
       <div id="page7" class="page7-content-block">
+        <div id="page7-trigger0" class="spacer s0"></div>
         <div id="page7-trigger1" class="spacer s0"></div>
         <div id="page7-trigger2" class="spacer s0"></div>
         <div id="page7-content-wrapper">
@@ -360,19 +361,19 @@
 
       <script>
         var content = document.getElementById("page7-content-wrapper");
-        var scene1 = new ScrollMagic.Scene({triggerElement: "#page7-trigger1", duration: 920, offset: 500})
+        var scene1 = new ScrollMagic.Scene({triggerElement: "#page7-trigger0", duration: '85%', offset: '451%'})
             .setPin(content)
             .addIndicators({name: "pin page"})
             .addTo(controller);
         
         var tweenLeft = TweenMax.to(".page7-top-svg", 1, {className: "+=fishRightPage7"});
-        var scene2 = new ScrollMagic.Scene({triggerElement: "#page7-trigger1", duration: 200, offset: 500})
+        var scene2 = new ScrollMagic.Scene({triggerElement: "#page7-trigger1", duration: '22%'})
           .setTween(tweenLeft)
           .addIndicators({name: "go to right"})
           .addTo(controller);
 
         var tweenRight = TweenMax.to(".page7-bottom-svg", 1, {className: "+=fishLeftPage7"});
-        var scene3 = new ScrollMagic.Scene({triggerElement: "#page7-trigger1", duration: 200, offset: 500})
+        var scene3 = new ScrollMagic.Scene({triggerElement: "#page7-trigger1", duration: '22%'})
           .setTween(tweenRight)
           .addIndicators({name: "go to left"})
           .addTo(controller);
@@ -380,14 +381,14 @@
         if($(window).width() >= 500) {
           var animatedBlock = document.getElementById("page7-animated-block")
           var zoomed = TweenMax.to(animatedBlock, 1, {className: "+=zoomed"});
-          var pinSceneIntro = new ScrollMagic.Scene({triggerElement: '#page7-trigger2', duration: 800})
+          var pinSceneIntro = new ScrollMagic.Scene({triggerElement: '#page7-trigger2', duration: '50%'})
             .setTween(zoomed)
             .addIndicators({name: "zoom"})
             .addTo(controller)
         } else {
           var animatedBlock = document.getElementById("page7-animated-block")
           var zoomed = TweenMax.to(animatedBlock, 1, {className: "+=zoomed"});
-          var pinSceneIntro = new ScrollMagic.Scene({triggerElement: '#page7-trigger2', duration: 1000})
+          var pinSceneIntro = new ScrollMagic.Scene({triggerElement: '#page7-trigger2', duration: '70%'})
             .setTween(zoomed)
             .addIndicators({name: "zoom"})
             .addTo(controller)
@@ -403,8 +404,8 @@
         <div class="page9-content-block _content-padding">
           <div id="page9-trigger1" class="spacer s0"></div>
           <div class="page9-left-block">
-            <div class="page9-img-building-small"></div>
-            <div class="page9-img-lady"></div>
+            <img src="./assets/building_small.png" class="page9-img-building-small" />
+            <img src="./assets/lady.png" class="page9-img-lady" />
           </div>
           <div class="page9-right-block">
             <p class="page9-title">
@@ -436,13 +437,13 @@
           <script>
             if($(window).width() >= 500) {
               var rotate = TweenMax.to(".page9-ngramma", 1, {rotation: 720, ease: Linear.easeNone});
-              var scene = new ScrollMagic.Scene({triggerElement: "#page9-trigger1", duration: 1000, pushFollowers: false})
+              var scene = new ScrollMagic.Scene({triggerElement: "#page9-trigger1", duration: '110%', pushFollowers: false})
                       .setTween(rotate)
                       .addIndicators({name: "rotate ngramme"})
                       .addTo(controller);
             } else {
               var rotate = TweenMax.to(".page9-ngramma", 1, {rotation: 720, ease: Linear.easeNone});
-              var scene = new ScrollMagic.Scene({triggerElement: "#page9-trigger1", duration: 1500, pushFollowers: false})
+              var scene = new ScrollMagic.Scene({triggerElement: "#page9-trigger1", duration: '110%', pushFollowers: false})
                       .setTween(rotate)
                       .addIndicators({name: "rotate ngramme"})
                       .addTo(controller);
@@ -453,7 +454,6 @@
 
         <div class="page10-content-block _content-padding">
           <div id="page10-trigger1" class="spacer s0"></div>
-          <div id="page10-trigger2" class="spacer s0"></div>
           <div id="page10-text-wrapper" class="page10-text-wrapper">
             <p id="page10-text" class="page10-text">
               А пока до выпуска
@@ -466,13 +466,13 @@
 
           <script>
             var text = TweenMax.to("#page10-text", 1, {className: "+=__visible"});
-            var scene1 = new ScrollMagic.Scene({triggerElement: "#page10-trigger1", duration: 200})
+            var scene1 = new ScrollMagic.Scene({triggerElement: "#page10-trigger1", duration: '35%', offset: '40%'})
               .setTween(text)
               .addIndicators({name: "show text"})
               .addTo(controller);
 
             var textBlock = document.getElementById("page10-text-wrapper");
-            var scene2 = new ScrollMagic.Scene({triggerElement: "#page10-trigger1", duration: 300, offset: 100})
+            var scene2 = new ScrollMagic.Scene({triggerElement: "#page10-trigger1", duration: '40%', offset: '80%'})
               .setPin(textBlock)
               .addIndicators({name: "pin text"})
               .addTo(controller);

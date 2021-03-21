@@ -510,6 +510,10 @@
   background-size: cover;
   z-index: 1;
 }
+#page7-trigger1 {
+  position: absolute;
+  top: 36%;
+}
 #page7-trigger2 {
   position: absolute;
   top: 750px;
@@ -519,22 +523,22 @@
   height: 1388px;
 }
 .zoomed {
-  transform: scale(30) translateY(-1.5%) translateX(1.5%);
+  transform: scale(30) translateY(3%) translateX(2.65%);
 }
 .page7-top-svg {
-  transform: translateX(-2980px);
+  transform: translateX(-66%);
   width: 4777px;
-  height: 500px;
+  height: 450px;
   background: url(./assets/page7_autumn2001.svg) no-repeat center center;
-  background-size: cover;
+  background-size: 100%;
   z-index: 2;
 }
 .page7-bottom-svg {
-  transform: translateX(0px);
+  transform: translateX(-5%);
   width: 4777px;
-  height: 500px;
+  height: 450px;
   background: url(./assets/page7_lyubuchany.svg) no-repeat center center;
-  background-size: cover;
+  background-size: 100%;
   z-index: 2;
 }
 
@@ -553,34 +557,28 @@
 .page9-left-block {
   display: inline-block;
   flex-direction: column;
-  padding: 125px 0;
+  padding: 11% 0;
+  width: 40%;
 }
 .page9-img-building-small {
-  width: 512px;
-  height: 424px;
-  background: url(./assets/building.png) no-repeat center center;
-  background-size: cover;
+  width: 100%;
 }
 .page9-img-lady {
-  width: 512px;
-  height: 246px;
+  width: 100%;
   margin-top: 63px;
-  background: url(./assets/lady.png) no-repeat center center;
-  background-size: cover;
 }
 .page9-right-block {
   display: inline-block;
   flex-direction: column;
-  width: 770px;
-  height: 684px;
-  padding: 205px 0 93px 125px;
+  width: 50%;
+  padding: 17% 0 0 10%;
 }
 
 .page9-title {
   margin: 0 0 0 0;
   align-self: center;
   font-family: "Biocad_Display-Regular";
-  font-size: 35px;
+  font-size: 27px;
   font-weight: 400;
   line-height: 49px;
   letter-spacing: 0em;
@@ -599,7 +597,7 @@
 .page9-text {
   padding-bottom: 30px;
   font-family: "Biocad_Display-Regular";
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0em;
@@ -608,9 +606,9 @@
 .page9-ngramma {
   height: 29px;
   width: 29px;
-  margin-right: 138px;
+  margin-right: 15%;
   background: url(./assets/n-gramma.svg) no-repeat center center;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .page10-content-block {
@@ -637,11 +635,7 @@
 }
 #page10-trigger1 {
   position: absolute;
-  top: 350px;
-}
-#page10-trigger2 {
-  position: absolute;
-  top: 450px;
+  top: 30%;
 }
 
 /* global modifications */
@@ -655,10 +649,10 @@
   right: 90%;
 }
 .fishRightPage7 {
-  transform: translateX(-31%);
+  transform: translateX(-35%);
 }
 .fishLeftPage7 {
-  transform: translateX(-31%);
+  transform: translateX(-35%);
 }
 .continueFloatingLeft {
   right: 0px;
