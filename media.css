@@ -14,7 +14,8 @@ html {
   height: 1600px;
 }
 
-@media screen and (min-width: 1381px) and (max-width: 1420px) {
+/* стили для 13 дюймовых мониторов */
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
   .start-page-title-wrapper {
     width: 700px;
     height: auto;
@@ -211,6 +212,7 @@ html {
   }
 }
 
+/* стили для планшетов */
 @media screen and (min-width: 1050px) and (max-width: 1380px) {
   .start-page-title-wrapper {
     width: 700px;
