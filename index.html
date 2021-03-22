@@ -97,7 +97,7 @@
       </div>
 
       <script>
-        if($(window).width() >= 500) {
+        
           var photo1 = document.getElementById("page2-photo1");
           var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger1"})
             .on("enter", function () {photo1.style.opacity = "1";})
@@ -119,8 +119,16 @@
             .addIndicators()
             .addTo(controller);
           
+        if($(window).width() < 1440) { 
           var img = document.getElementById("page2-img-wrapper");
-          var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger0", duration: '57%'})
+          var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger0", duration: '80%'})
+            .setPin("#page2-title-wrapper")
+            .on("enter", function () {img.style.position = "absolute", img.style.left = "232px";})
+            .addIndicators({name: "text up"})
+            .addTo(controller);
+        } else {
+          var img = document.getElementById("page2-img-wrapper");
+          var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger0", duration: '75%'})
             .setPin("#page2-title-wrapper")
             .on("enter", function () {img.style.position = "absolute", img.style.left = "232px";})
             .addIndicators({name: "text up"})

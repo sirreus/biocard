@@ -171,6 +171,9 @@ html {
     background: url(./assets/people-in-lab.png) no-repeat left 15% center;
   }
 
+  #page7-trigger0 {
+    top: 29%;
+  }
   .page7-top-svg {
     height: 405px;
     transform: translateX(-64%);
