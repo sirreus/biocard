@@ -195,6 +195,7 @@
   transform: rotate(-6.7deg);
   background: url(./assets/page2-photo1.png) no-repeat center center;
   background-size: cover;
+  transition: opacity 0.7s ease;
 }
 .page2-photo2 {
   position: absolute;
@@ -204,6 +205,7 @@
   transform: rotate(11.46deg);
   background: url(./assets/page2-photo2.png) no-repeat center center;
   background-size: cover;
+  transition: opacity 0.7s ease;
 }
 .page2-photo3 {
   height: 313px;
@@ -212,6 +214,7 @@
   transform: rotate(4.58deg);
   background: url(./assets/page2-photo3.png) no-repeat center center;
   background-size: cover;
+  transition: opacity 0.7s ease;
 }
 .page2-text-wrapper {
   position: absolute;
@@ -340,6 +343,7 @@
   font-weight: 700;
   line-height: 133px;
   letter-spacing: -0.01em;
+  transition: opacity 0.5s ease;
 }
 .page4-title2-wrapper {
   display: flex;
