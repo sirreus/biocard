@@ -93,8 +93,8 @@
 ._content-padding-small {
   padding: 0 66px;
 }
-._pb35 {
-  padding-bottom: 35%;
+._pb50 {
+  padding-bottom: 50%;
 }
 
 .start-page-content-wrapper {
@@ -456,7 +456,7 @@
 }
 
 .page6-content-wrapper {
-  padding: 35% 0 10% 0;
+  padding: 0 0 20% 0;
   display: flex;
   flex-direction: row;
 }
@@ -465,7 +465,7 @@
   flex-direction: column;
   width: 893px;
   height: 662px;
-  padding: 125px 0;
+  padding: 0 0 20% 0;
 }
 .page6-title {
   margin: 0 0 0 0;

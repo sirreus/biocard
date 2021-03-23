@@ -51,8 +51,17 @@ html {
     font-size: 18px;
     line-height: 25px;
   }
+  #page2-trigger0 {
+    top: 20%;
+  }
+  #page2-trigger1 {
+    top: 35%;
+  }
+  #page2-trigger2 {
+    top: 42%;
+  }
   #page2-trigger3 {
-    top: 55%;
+    top: 48%;
   }
 
   .page3-title-text1 {
@@ -121,7 +130,6 @@ html {
   .page5-content-wrapper {
     display: flex;
     flex-direction: row;
-    padding: 0px 0 25% 0;
   }
   .page5-left-block {
     padding: 0 0 5% 0;

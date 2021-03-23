@@ -65,7 +65,7 @@
       </div>
 
       <div class="page _content-padding _grey">
-        <div class="page2-content-block _pb35">
+        <div class="page2-content-block _pb50">
           <div id="page2-trigger0" class="spacer s0"></div>
           <div id="page2-trigger1" class="spacer s0"></div>
           <div id="page2-trigger2" class="spacer s0"></div>
@@ -120,17 +120,13 @@
               .addTo(controller);
             
           if($(window).width() < 1440) { 
-            var img = document.getElementById("page2-img-wrapper");
-            var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger0", duration: '90%'})
+            var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger0", duration: '85%'})
               .setPin("#page2-title-wrapper")
-              .on("enter", function () {img.style.position = "absolute", img.style.left = "232px";})
               .addIndicators({name: "text up"})
               .addTo(controller);
           } else {
-            var img = document.getElementById("page2-img-wrapper");
             var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger0", duration: '73%'})
               .setPin("#page2-title-wrapper")
-              .on("enter", function () {img.style.position = "absolute", img.style.left = "232px";})
               .addIndicators({name: "text up"})
               .addTo(controller);
           }
