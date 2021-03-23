@@ -46,6 +46,7 @@
   margin: 0 auto;
 }
 .link {
+  position: relative;
   align-self: center;
   padding: 5px 0;
   font-family: "Biocad_Display-Bold";
@@ -55,12 +56,15 @@
   letter-spacing: -0.01em;
   color: #e8e8e8;
   text-decoration: none;
+  z-index: 1;
 }
 .link:hover {
   color: #212121;
+  z-index: 2;
 }
 .link-year {
   position: absolute;
+  width: fit-content;
   opacity: 0;
   padding: 0 5px;
   font-family: "Biocad_Display-Regular";
@@ -71,6 +75,32 @@
 }
 .link:hover .link-year {
   opacity: 1;
+  z-index: 2;
+}
+.link:hover:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  /* left: 30%; */
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: url(./assets/building_small.png) no-repeat center center;
+  background-size: 266px 184px;
+  width: 266px;
+  height: 184px;
+  z-index: -1;
+}
+.link-img {
+  position: absolute;
+  background: url(./assets/building_small.png) no-repeat center center;
+  background-size: cover;
+  opacity: 1;
+}
+.link:hover .link-img {
+  width: 366px;
+  height: 284px;
+  opacity: 1;
+  z-index: 1;
 }
 
 .start-page {
