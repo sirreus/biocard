@@ -359,7 +359,7 @@
         </div>
       </div>
 
-      <div class="page _darkblue">
+      <div id="blue-page" class="page _blue">
           <div class="page9-content-block _content-padding">
             <div id="page9-trigger1" class="spacer s0"></div>
             <div class="page9-left-block">
@@ -417,6 +417,12 @@
             </div>
 
             <script>
+              var darked = TweenMax.to("#blue-page", 1, {className: "+=__darkblue"});
+              var scene1 = new ScrollMagic.Scene({triggerElement: "#page10-trigger1", duration: '35%', offset: '40%'})
+                .setTween(darked)
+                .addIndicators({name: "darked"})
+                .addTo(controller);
+
               var text = TweenMax.to("#page10-text", 1, {className: "+=__visible"});
               var scene1 = new ScrollMagic.Scene({triggerElement: "#page10-trigger1", duration: '35%', offset: '40%'})
                 .setTween(text)

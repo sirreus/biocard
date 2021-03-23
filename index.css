@@ -84,8 +84,11 @@
 ._grey {
   background-color: #eae9ed;
 }
-._darkblue {
+._blue {
   background: #092847;
+}
+.__darkblue {
+  background-color: rgb(1, 21, 41);
 }
 ._content-padding {
   padding: 0 135px;
