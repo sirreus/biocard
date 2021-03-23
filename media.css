@@ -51,6 +51,9 @@ html {
     font-size: 18px;
     line-height: 25px;
   }
+  #page2-trigger3 {
+    top: 55%;
+  }
 
   .page3-title-text1 {
     font-size: 200px;

@@ -155,15 +155,15 @@
 }
 #page2-trigger1 {
   position: absolute;
-  top: 28%;
+  top: 37%;
 }
 #page2-trigger2 {
   position: absolute;
-  top: 38%;
+  top: 48%;
 }
 #page2-trigger3 {
   position: absolute;
-  top: 48%;
+  top: 59%;
 }
 .page2-title-wrapper {
   padding-bottom: 126.5px;
@@ -183,6 +183,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  align-self: center;
   align-items: center;
   width: 458px;
   height: 387px;
@@ -219,7 +220,7 @@
 .page2-text-wrapper {
   position: absolute;
   right: 0;
-  width: 50%;
+  width: 45%;
   padding: 60% 0 0 10%;
 }
 .spacer.s0 {
@@ -228,7 +229,7 @@
 .page2-text {
   margin: 0 0 0 0;
   font-family: "Biocad_Display-Regular";
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 36px;
   letter-spacing: 0em;
@@ -246,7 +247,11 @@
 }
 #page3-trigger1 {
   position: absolute;
-  top: 450px;
+  top: 16%;
+}
+#page3-trigger2 {
+  position: absolute;
+  top: 32%;
 }
 .page3-title-wrapper1 {
   position: absolute;
@@ -321,11 +326,11 @@
 }
 #page4-trigger2 {
   position: absolute;
-  top: 50%;
+  top: 95%;
 }
 #page4-trigger3 {
   position: absolute;
-  top: 73%;
+  top: 70%;
 }
 #page4-trigger4 {
   position: absolute;
@@ -343,11 +348,9 @@
   font-weight: 700;
   line-height: 133px;
   letter-spacing: -0.01em;
-  transition: opacity 0.5s ease;
 }
 .page4-title2-wrapper {
   display: flex;
-  align-items: center;
   width: 100%;
 }
 .page4-title2-text {
@@ -362,7 +365,7 @@
 .page4-subtitle {
   opacity: 0;
   margin: 0 0 0 0;
-  padding-top: 10px;
+  padding-top: 100px;
   font-family: "Biocad_Display-Regular";
   font-size: 16px;
   font-weight: 400;
