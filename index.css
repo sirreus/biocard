@@ -326,15 +326,19 @@
 }
 #page4-trigger2 {
   position: absolute;
-  top: 95%;
+  top: 50%;
 }
 #page4-trigger3 {
   position: absolute;
-  top: 70%;
+  top: 60%;
 }
 #page4-trigger4 {
   position: absolute;
   top: 65%;
+}
+#page4-trigger5 {
+  position: absolute;
+  top: 80%;
 }
 .page4-title1-wrapper {
   margin-right: 60px;

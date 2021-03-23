@@ -169,34 +169,36 @@
 
       <div class="page _parallax-bg-man">
         <div class="page4-gradient"></div>
-        <div id="qwer" class="page4-content-block">
-          <div id="page4-trigger1" class="spacer s0"></div>
-          <div id="page4-trigger2" class="spacer s0"></div>
-          <div id="page4-title-block">
-            <div class="page4-title1-wrapper">
-              <p id="page4-title1" class="page4-title1-text">Дмитрий</p>
+        <div class="page4-content-block">
+          <div id="qwer">
+            <div id="page4-trigger1" class="spacer s0"></div>
+            <div id="page4-trigger2" class="spacer s0"></div>
+            <div id="page4-title-block">
+              <div class="page4-title1-wrapper">
+                <p id="page4-title1" class="page4-title1-text">Дмитрий</p>
+              </div>
+              <div class="page4-title2-wrapper">
+                <p id="page4-title2" class="page4-title2-text">Морозов</p>
+                <p id="page4-subtitle" class="page4-subtitle">генеральный директор и основатель BIOCAD</p>
+              </div>
             </div>
-            <div class="page4-title2-wrapper">
-              <p id="page4-title2" class="page4-title2-text">Морозов</p>
-              <p id="page4-subtitle" class="page4-subtitle">генеральный директор и основатель BIOCAD</p>
+            
+            <div id="page4-trigger3" class="spacer s0"></div>
+            <div id="page4-trigger4" class="spacer s0"></div>
+            <div id="page4-trigger5" class="spacer s0"></div>
+            <div id="page4-text-wrapper" class="page4-text-wrapper">
+              <p id="page4-text" class="page4-text">
+                “&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Прежде чем основать компанию, я работал в банке и в целом
+                заработать сумел. Многие люди в моем тогдашнем положении просто ушли
+                бы на пенсию. Но мне хотелось изменить мир, а с тёплых островов
+                заниматься этим не совсем удобно. Компанию я начал строить, очень
+                плохо представляя себе специфику фармацевтического бизнеса.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“
+              </p>
             </div>
-          </div>
-          
-          <div id="page4-trigger3" class="spacer s0"></div>
-          <div id="page4-trigger4" class="spacer s0"></div>
-          <div id="page4-text-wrapper" class="page4-text-wrapper">
-            <p id="page4-text" class="page4-text">
-              “&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Прежде чем основать компанию, я работал в банке и в целом
-              заработать сумел. Многие люди в моем тогдашнем положении просто ушли
-              бы на пенсию. Но мне хотелось изменить мир, а с тёплых островов
-              заниматься этим не совсем удобно. Компанию я начал строить, очень
-              плохо представляя себе специфику фармацевтического бизнеса.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“
-            </p>
           </div>
         </div>
 
         <script>
-          if($(window).width() >= 500) {
             var title1 = TweenMax.to("#page4-title1", 1, {className: "+=__visible"});
             var scene1 = new ScrollMagic.Scene({triggerElement: "#page4-trigger1", duration: '35%'})
               .setTween(title1)
@@ -220,80 +222,32 @@
               .setTween(text)
               .addIndicators({name: "show text"})
               .addTo(controller);
-            
+
             var titleBlock = document.getElementById("page4-title-block");
-            var scene5 = new ScrollMagic.Scene({triggerElement: "#page4-trigger3", duration: '25%'})
+            var scene5 = new ScrollMagic.Scene({triggerElement: "#page4-trigger2", duration: '15%'})
               .setPin(titleBlock)
-              .addIndicators({name: "pin block"})
+              .addIndicators({name: "pin title block"})
               .addTo(controller);
 
-            var subtitleUp = TweenMax.to("#page4-subtitle", 1, {paddingTop: '50px'});
-            var scene6 = new ScrollMagic.Scene({triggerElement: "#page4-trigger3", duration: '25%', offset: '-65%'})
+            var subtitleUp = TweenMax.to("#page4-subtitle", 1, {transform: 'translateY(-150%)'});
+            var scene6 = new ScrollMagic.Scene({triggerElement: "#page4-trigger3", duration: '20%', offset: '-65%'})
               .setTween(subtitleUp)
               .addIndicators({name: "subtitle up"})
               .addTo(controller);
-          }
-          //  else if(($(window).width() >= 1050) && ($(window).width() <= 1380)) {
-          //   var title1 = TweenMax.to("#page4-title1", 1, {className: "+=__visible"});
-          //   var scene1 = new ScrollMagic.Scene({triggerElement: "#page4-trigger1", duration: 450, offset: -250})
-          //     .setTween(title1)
-          //     .addIndicators({name: "show title1"})
-          //     .addTo(controller);
-
-          //   var title2 = TweenMax.to("#page4-title2", 1, {className: "+=__visible"});
-          //   var scene2 = new ScrollMagic.Scene({triggerElement: "#page4-trigger2", duration: 450, offset: -250})
-          //     .setTween(title2)
-          //     .addIndicators({name: "show title2"})
-          //     .addTo(controller);
-
-          //   var subtitle = TweenMax.to("#page4-subtitle", 1, {className: "+=__visible"});
-          //   var scene3 = new ScrollMagic.Scene({triggerElement: "#page4-trigger2", duration: 250, offset: -130})
-          //     .setTween(subtitle)
-          //     .addIndicators({name: "show subtitle"})
-          //     .addTo(controller);
-
-          //   var text = TweenMax.to("#page4-text", 1, {className: "+=__visible"});
-          //   var scene4 = new ScrollMagic.Scene({triggerElement: "#page4-trigger4", duration: 350, offset: -220})
-          //     .setTween(text)
-          //     .addIndicators({name: "show text"})
-          //     .addTo(controller);
             
-          //   var titleBlock = document.getElementById("page4-title-block");
-          //   var scene5 = new ScrollMagic.Scene({triggerElement: "#page4-trigger3", duration: 200, offset: -350})
-          //     .setPin(titleBlock)
-          //     .addIndicators({name: "pin title"})
-          //     .addTo(controller);
-          // } else {
-          //   var title1 = TweenMax.to("#page4-title1", 1, {className: "+=__visible"});
-          //   var scene1 = new ScrollMagic.Scene({triggerElement: "#page4-trigger1", duration: 450, offset: -300})
-          //     .setTween(title1)
-          //     .addIndicators({name: "show title1"})
-          //     .addTo(controller);
+            var subtitleUp = TweenMax.to("#page4-text", 1, {transform: 'translateY(-50%)'});
+            var scene6 = new ScrollMagic.Scene({triggerElement: "#page4-trigger3", duration: '20%', offset: '-65%'})
+              .setTween(subtitleUp)
+              .addIndicators({name: "text go up"})
+              .addTo(controller);
 
-          //   var title2 = TweenMax.to("#page4-title2", 1, {className: "+=__visible"});
-          //   var scene2 = new ScrollMagic.Scene({triggerElement: "#page4-trigger2", duration: 450, offset: -300})
-          //     .setTween(title2)
-          //     .addIndicators({name: "show title2"})
-          //     .addTo(controller);
-
-          //   var subtitle = TweenMax.to("#page4-subtitle", 1, {className: "+=__visible"});
-          //   var scene3 = new ScrollMagic.Scene({triggerElement: "#page4-trigger2", duration: 250, offset: -150})
-          //     .setTween(subtitle)
-          //     .addIndicators({name: "show subtitle"})
-          //     .addTo(controller);
-
-          //   var text = TweenMax.to("#page4-text", 1, {className: "+=__visible"});
-          //   var scene4 = new ScrollMagic.Scene({triggerElement: "#page4-trigger4", duration: 350, offset: -250})
-          //     .setTween(text)
-          //     .addIndicators({name: "show text"})
-          //     .addTo(controller);
-            
-          //   var titleBlock = document.getElementById("page4-title-block");
-          //   var scene5 = new ScrollMagic.Scene({triggerElement: "#page4-trigger3", duration: 200, offset: -400})
-          //     .setPin(titleBlock)
-          //     .addIndicators({name: "pin title"})
-          //     .addTo(controller);
-          // }
+            ["#page4-title-block", "#page4-text-wrapper"].forEach(elem => {
+              var elemDown = TweenMax.to(elem, 1, {transform: 'translateY(600px)'});
+              var scene7 = new ScrollMagic.Scene({triggerElement: "#page4-trigger5", duration: '100%'})
+                .setTween(elemDown)
+                .addIndicators({name: "elem down"})
+                .addTo(controller);
+            })
         </script>
       </div>
 
