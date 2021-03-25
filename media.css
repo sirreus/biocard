@@ -511,6 +511,9 @@ html {
     padding: 0 20px;
   }
 
+  .start-page {
+    height: 100vh;
+  }
   .start-page-content-wrapper {
     flex-direction: column;
     align-items: flex-start;
