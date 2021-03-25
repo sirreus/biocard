@@ -198,6 +198,9 @@
   position: absolute;
   top: 59%;
 }
+.page2-mobile-title {
+  display: none;
+}
 .page2-title-wrapper {
   padding-bottom: 126.5px;
   display: flex;

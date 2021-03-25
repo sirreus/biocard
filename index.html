@@ -71,6 +71,9 @@
           <div id="page2-trigger1" class="spacer s0"></div>
           <div id="page2-trigger2" class="spacer s0"></div>
           <div id="page2-trigger3" class="spacer s0"></div>
+          <div class="page2-mobile-title">
+            <p class="page2-mobile-title-text">Из хаоса к порядку: рождение BIOCAD</p>
+          </div>
           <div id="page2-title-wrapper" class="page2-title-wrapper">
             <p class="page2-title">Из хаоса к порядку: рождение BIOCAD</p>
             <div class="page2-img-wrapper">
@@ -98,7 +101,7 @@
         </div>
 
         <script>
-          
+          if($(window).width() > 760) { 
             var photo1 = document.getElementById("page2-photo1");
             var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger1"})
               .on("enter", function () {photo1.style.opacity = "1";})
@@ -120,21 +123,22 @@
               .addIndicators()
               .addTo(controller);
             
-          if( ($(window).width() > 1024) && ($(window).width()) < 1440) { 
-            var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger0", duration: '85%'})
-              .setPin("#page2-title-wrapper")
-              .addIndicators({name: "text up macbook13"})
-              .addTo(controller);
-          } else if(($(window).width() >= 800) && ($(window).width() <= 1024)) {
-            var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger0", duration: '60%'})
-              .setPin("#page2-title-wrapper")
-              .addIndicators({name: "text up ipad mini"})
-              .addTo(controller);
-          } else {
-            var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger0", duration: '73%'})
-              .setPin("#page2-title-wrapper")
-              .addIndicators({name: "text up macbook15"})
-              .addTo(controller);
+            if( ($(window).width() > 1024) && ($(window).width()) < 1440) { 
+              var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger0", duration: '85%'})
+                .setPin("#page2-title-wrapper")
+                .addIndicators({name: "text up macbook13"})
+                .addTo(controller);
+            } else if(($(window).width() >= 800) && ($(window).width() <= 1024)) {
+              var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger0", duration: '60%'})
+                .setPin("#page2-title-wrapper")
+                .addIndicators({name: "text up ipad mini"})
+                .addTo(controller);
+            } else {
+              var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger0", duration: '73%'})
+                .setPin("#page2-title-wrapper")
+                .addIndicators({name: "text up macbook15"})
+                .addTo(controller);
+            }
           }
         </script>
       </div>
@@ -235,39 +239,41 @@
               .addIndicators({name: "pin title block"})
               .addTo(controller);
 
-            var subtitleUp = TweenMax.to("#page4-subtitle", 1, {transform: 'translateY(-150%)'});
-            var scene6 = new ScrollMagic.Scene({triggerElement: "#page4-trigger3", duration: '20%', offset: '-65%'})
-              .setTween(subtitleUp)
-              .addIndicators({name: "subtitle up"})
-              .addTo(controller);
-            
-            var subtitleUp = TweenMax.to("#page4-text", 1, {transform: 'translateY(-50%)'});
-            var scene6 = new ScrollMagic.Scene({triggerElement: "#page4-trigger3", duration: '20%', offset: '-65%'})
-              .setTween(subtitleUp)
-              .addIndicators({name: "text go up"})
-              .addTo(controller);
-
-            ["#page4-title-block", "#page4-text-wrapper"].forEach(elem => {
-              if( ($(window).width() > 1024) && ($(window).width()) < 1440) { 
-                var elemDown = TweenMax.to(elem, 1, {transform: 'translateY(600px)'});
-                var scene7 = new ScrollMagic.Scene({triggerElement: "#page4-trigger5", duration: '100%'})
-                  .setTween(elemDown)
-                  .addIndicators({name: "elem down"})
-                  .addTo(controller);
-              } else if(($(window).width() >= 800) && ($(window).width() <= 1024)) {
-                var elemDown = TweenMax.to(elem, 1, {transform: 'translateY(700px)'});
-                var scene7 = new ScrollMagic.Scene({triggerElement: "#page4-trigger5", duration: '100%'})
-                  .setTween(elemDown)
-                  .addIndicators({name: "elem down"})
-                  .addTo(controller);
-              } else {
-                var elemDown = TweenMax.to(elem, 1, {transform: 'translateY(500px)'});
-                var scene7 = new ScrollMagic.Scene({triggerElement: "#page4-trigger5", duration: '100%'})
-                  .setTween(elemDown)
-                  .addIndicators({name: "elem down"})
-                  .addTo(controller);
-              }
-            })
+            if($(window).width() > 760) {
+              var subtitleUp = TweenMax.to("#page4-subtitle", 1, {transform: 'translateY(-150%)'});
+              var scene6 = new ScrollMagic.Scene({triggerElement: "#page4-trigger3", duration: '20%', offset: '-65%'})
+                .setTween(subtitleUp)
+                .addIndicators({name: "subtitle up"})
+                .addTo(controller);
+              
+              var subtitleUp = TweenMax.to("#page4-text", 1, {transform: 'translateY(-50%)'});
+              var scene6 = new ScrollMagic.Scene({triggerElement: "#page4-trigger3", duration: '20%', offset: '-65%'})
+                .setTween(subtitleUp)
+                .addIndicators({name: "text go up"})
+                .addTo(controller);
+ 
+              ["#page4-title-block", "#page4-text-wrapper"].forEach(elem => {
+                if( ($(window).width() > 1024) && ($(window).width()) < 1440) { 
+                  var elemDown = TweenMax.to(elem, 1, {transform: 'translateY(600px)'});
+                  var scene7 = new ScrollMagic.Scene({triggerElement: "#page4-trigger5", duration: '100%'})
+                    .setTween(elemDown)
+                    .addIndicators({name: "elem down"})
+                    .addTo(controller);
+                } else if(($(window).width() >= 800) && ($(window).width() <= 1024)) {
+                  var elemDown = TweenMax.to(elem, 1, {transform: 'translateY(700px)'});
+                  var scene7 = new ScrollMagic.Scene({triggerElement: "#page4-trigger5", duration: '100%'})
+                    .setTween(elemDown)
+                    .addIndicators({name: "elem down"})
+                    .addTo(controller);
+                } else {
+                  var elemDown = TweenMax.to(elem, 1, {transform: 'translateY(500px)'});
+                  var scene7 = new ScrollMagic.Scene({triggerElement: "#page4-trigger5", duration: '100%'})
+                    .setTween(elemDown)
+                    .addIndicators({name: "elem down"})
+                    .addTo(controller);
+                }
+              })
+            }
         </script>
       </div>
 
@@ -352,14 +358,20 @@
               .addIndicators({name: "pin page"})
               .addTo(controller);
           
+          if($(window).width() >= 800) {
+            var page7ScrollDuration = '22%'
+          } else {
+            var page7ScrollDuration = '42%'
+          }
+          
           var tweenLeft = TweenMax.to(".page7-top-svg", 1, {className: "+=fishRightPage7"});
-          var scene2 = new ScrollMagic.Scene({triggerElement: "#page7-trigger1", duration: '22%'})
+          var scene2 = new ScrollMagic.Scene({triggerElement: "#page7-trigger1", duration: page7ScrollDuration})
             .setTween(tweenLeft)
             .addIndicators({name: "go to right"})
             .addTo(controller);
 
           var tweenRight = TweenMax.to(".page7-bottom-svg", 1, {className: "+=fishLeftPage7"});
-          var scene3 = new ScrollMagic.Scene({triggerElement: "#page7-trigger1", duration: '22%'})
+          var scene3 = new ScrollMagic.Scene({triggerElement: "#page7-trigger1", duration: page7ScrollDuration})
             .setTween(tweenRight)
             .addIndicators({name: "go to left"})
             .addTo(controller);
@@ -414,7 +426,13 @@
             </div>
 
             <script>
-              if($(window).width() >= 500) {
+              if($(window).width() < 800) {
+                var rotate = TweenMax.to(".page9-ngramma", 1, {rotation: 720, ease: Linear.easeNone});
+                var scene = new ScrollMagic.Scene({triggerElement: "#page9-trigger1", duration: '200%', pushFollowers: false})
+                        .setTween(rotate)
+                        .addIndicators({name: "rotate ngramme"})
+                        .addTo(controller);
+              } else {
                 var rotate = TweenMax.to(".page9-ngramma", 1, {rotation: 720, ease: Linear.easeNone});
                 var scene = new ScrollMagic.Scene({triggerElement: "#page9-trigger1", duration: '110%', pushFollowers: false})
                         .setTween(rotate)
@@ -438,7 +456,12 @@
 
             <script>
               var darked = TweenMax.to("#blue-page", 1, {className: "+=__darkblue"});
-              var scene1 = new ScrollMagic.Scene({triggerElement: "#page10-trigger1", duration: '35%', offset: '40%'})
+              if($(window).width() < 800) {
+                var page7DarkOffset = '-60%'
+              } else {
+                var page7DarkOffset = '40%'
+              }
+              var scene1 = new ScrollMagic.Scene({triggerElement: "#page10-trigger1", duration: '35%', offset: page7DarkOffset})
                 .setTween(darked)
                 .addIndicators({name: "darked"})
                 .addTo(controller);
@@ -450,9 +473,16 @@
                 .addTo(controller);
 
               var textBlock = document.getElementById("page10-text-wrapper");
-              var scene2 = new ScrollMagic.Scene({triggerElement: "#page10-trigger1", duration: '40%', offset: '80%'})
+              if($(window).width() < 800) {
+                var page7PinDuration = '80%'
+                var page7PinOffset = '40%'
+              } else {
+                var page7PinDuration = '40%'
+                var page7PinOffset = '80%'
+              }
+              var scene2 = new ScrollMagic.Scene({triggerElement: "#page10-trigger1", duration: page7PinDuration, offset: page7PinOffset})
                 .setPin(textBlock)
-                .addIndicators({name: "pin text"})
+                .addIndicators({name: "pin tex"})
                 .addTo(controller);
             </script>
           </div>

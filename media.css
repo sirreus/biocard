@@ -473,8 +473,9 @@ html {
   }
 }
 
+/* стили для iPhone SE */
 @media screen and (min-width: 320px) and (max-width: 799px) {
-  */ html,
+  html,
   body {
     max-width: 100vw;
     overflow-x: hidden;
@@ -485,406 +486,374 @@ html {
     display: block;
     margin: 50px 0 0 20px;
   }
+  .burger-button {
+    top: 35px;
+    right: 20px;
+  }
 
   #menu {
     width: 100vw;
     padding: 25vh 0;
     height: 100vh;
   }
-
   .link-list {
     width: 90vw;
     margin: 0 auto;
     height: auto;
   }
-
   .link {
     font-size: 23px;
     line-height: 32px;
     color: black;
   }
 
-  .burger-button {
-    top: 35px;
-    right: 20px;
-  }
-
-  .start-page {
-    height: 100vh;
-  }
-
-  .start-page-title-wrapper {
-    width: 80vw;
-    height: auto;
-  }
-
-  .start-page-title {
-    font-size: 45px;
-    line-height: 42px;
-  }
-
-  .start-page-text {
-    font-size: 18px;
-    line-height: 23px;
-    padding-bottom: 20px;
-  }
-
   ._content-padding {
     padding: 0 20px;
   }
 
+  .start-page-content-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50% 0;
+  }
+  .start-page-title-wrapper {
+    width: auto;
+    height: auto;
+  }
+  .start-page-title {
+    font-size: 45px;
+    line-height: 42px;
+  }
+  .start-page-text-wrapper {
+    margin-left: 0px;
+    width: auto;
+    height: auto;
+    padding: 20% 0 30% 38%;
+  }
+  .start-page-text {
+    font-size: 16px;
+    line-height: 17px;
+    padding-bottom: 20px;
+  }
   .start-page-img-wrapper {
     padding: 0 270px 115px 0;
     margin-top: -50px;
   }
-
-  .start-page-content-wrapper {
-    padding-bottom: 0px;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 30vh 0 20vh 0;
-  }
-
   .arrow-button {
     bottom: 5vh;
     position: absolute;
   }
 
-  .start-page-text-wrapper {
-    margin-left: 40%;
-    margin-top: 20%;
-    height: auto;
-    margin-bottom: 50px;
+  .page2-content-block {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40% 0 160% 0;
   }
-
+  .page2-mobile-title {
+    display: flex;
+    order: 1;
+  }
+  .page2-mobile-title-text {
+    margin: 0 0 10% 0;
+    text-align: center;
+    font-family: "Biocad_Display-Bold";
+    font-size: 27px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+  }
+  .page2-title-wrapper {
+    width: 100%;
+    padding-bottom: 10%;
+    order: 3;
+  }
+  .page2-title {
+    display: none;
+  }
   .page2-img-wrapper {
-    width: 90vw;
-    margin-top: 50vh;
+    margin-top: 10%;
+    height: auto;
   }
-
   .page2-photo1 {
     width: 235px;
     height: 240px;
     opacity: 1;
   }
-
   .page2-photo2 {
     width: 235px;
     height: 240px;
     opacity: 1;
   }
-
   .page2-photo3 {
     width: 235px;
     height: 240px;
     opacity: 1;
   }
-
-  .page2-content-block {
-    padding-top: 100px;
-  }
-
-  #page2-title-wrapper {
-    padding-bottom: 10vh;
-  }
-
-  .page2-title {
-    font-size: 27px;
-    line-height: 30px;
-    text-align: left;
-    width: 80vw;
-  }
-
   .page2-text-wrapper {
-    padding: 30vw 0;
-    width: 90vw;
+    position: relative;
+    padding: 5% 0;
+    width: 100%;
+    order: 2;
   }
-
-  .line {
-    width: 90vw;
-  }
-
   .page2-text {
     font-size: 18px;
     line-height: 25px;
   }
+  .line {
+    width: 90vw;
+  }
 
   .page3-content-block {
-    padding: 100px 0 150px 0;
+    padding: 150px 0;
   }
-
-  .page3-title-text1 {
-    font-size: 200px;
-    line-height: 190px;
+  #page3-trigger1 {
+    top: 21%;
   }
-
-  .page3-title-text2 {
-    font-size: 200px;
-    line-height: 190px;
+  #page3-trigger2 {
+    top: 35%;
   }
-
+  .page3-img-wrapper {
+    width: 272.12px;
+    height: 278.7px;
+  }
   .page3-title-wrapper1 {
-    top: 50px;
-    left: -270%;
+    /* left: -163%; */
+    left: -520px;
   }
-
-  .page3-title-wrapper2 {
-    bottom: 70px;
-    right: -490%;
+  .page3-title-text1 {
+    font-size: 100px;
+    line-height: 95px;
   }
-
   .fishRightFull {
-    left: 150vw;
+    /* left: 100%; */
+    right: -1310px;
+    left: initial;
   }
-
+  .page3-title-wrapper2 {
+    bottom: 5%;
+    /* right: -615%; */
+    right: -1970px;
+  }
+  .page3-title-text2 {
+    font-size: 100px;
+    line-height: 95px;
+  }
   .fishLeftFull {
-    right: 250vw;
-  }
-
-  .page4-content-block {
-    width: 100vw;
-    height: 100vh;
-    padding: 40vh 5vw 0;
-  }
-
-  .page4-title2-wrapper {
-    align-items: end;
-    justify-content: flex-end;
-    text-align: right;
-    width: 100vw;
-    flex-direction: column;
-    height: auto;
-    padding: 10px 0;
-  }
-
-  .page4-title1-text {
-    font-size: 45px;
-    line-height: 43px;
-    margin: 0 10vw 0 0;
-  }
-
-  .page4-title2-text {
-    font-size: 45px;
-    line-height: 43px;
-    margin: 0 30vw 0 0;
-  }
-
-  .page4-subtitle {
-    font-size: 14px;
-    padding: 3vh 10vw 3vh 30vw;
-  }
-
-  #page4-text-wrapper {
-    padding: 0vh 0 0 10vw;
-  }
-
-  #page4-text {
-    font-size: 16px;
-    line-height: 28px;
+    right: initial;
+    left: -785px;
   }
 
   ._parallax-bg-man {
-    height: 120vh;
+    height: 568px;
+  }
+  .page4-gradient {
+    height: 750px;
+    bottom: -40%;
+  }
+  .page4-content-block {
+    width: 100%;
+    height: auto;
+    padding: 100% 5% 0 0;
+  }
+  #page4-trigger1 {
+    top: 33%;
+  }
+  #page4-trigger4 {
+    top: 55%;
+  }
+  .page4-title1-wrapper {
+    margin-right: 0;
+    float: right;
+  }
+  .page4-title1-text {
+    font-size: 45px;
+    line-height: 43px;
+  }
+  .page4-title2-wrapper {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .page4-title2-text {
+    font-size: 45px;
+    line-height: 43px;
+    align-self: center;
+    margin: 0 5px 0 0;
+  }
+  .page4-subtitle {
+    font-size: 14px;
+    padding: 5% 0 0 40%;
+  }
+  .page4-text-wrapper {
+    padding: 10% 0 0 11%;
+  }
+  .page4-text {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .page5-content-wrapper {
     flex-direction: column;
-    padding-top: 10vh;
+    width: 100%;
   }
-
   .page5-left-block {
-    padding: 10vh 0;
+    padding: 10px 0;
+    width: 100%;
   }
-
   .page5-img {
-    width: 90vw;
+    width: 280px;
+    height: 187px;
     margin: 0 auto;
   }
-
+  .page5-text-wrapper {
+    margin: 0 auto;
+    padding: 70px 0;
+    display: block;
+  }
   .page5-subtitle {
     font-size: 16px;
     width: 90vw;
     text-align: center;
-    margin: 0 25vw 0 0;
   }
-
-  .page5-text-wrapper {
-    margin: 5vh auto 0;
-  }
-
   .page5-title {
     font-size: 25px;
     line-height: 30px;
-    width: 90vw;
-    margin: 20px 10vw 0 0;
-    height: auto;
+    width: 100%;
   }
-
   .page5-text {
     font-size: 16px;
     line-height: 24px;
     width: 90vw;
-    margin: 5vh 24vw 0 0;
     height: auto;
+    margin: 0 0 0 0;
   }
-
   .page5-woman-img {
-    width: 90vw;
-    height: 400px;
-    align-self: auto;
-    display: block;
-    margin: 0 0 10vh;
+    width: 282px;
+    height: 252px;
+    margin: 0 auto 20%;
   }
 
+  ._content-padding-small {
+    padding: 0 20px;
+  }
   .page6-content-wrapper {
     flex-direction: column;
   }
-
   .page6-left-block {
-    width: 90vw;
+    width: 100%;
     height: auto;
-    padding: 0 5vw;
+    display: block;
   }
-
-  .page6-subtitle {
-    font-size: 16px;
+  .page6-text-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 10% 0 0 0;
   }
-
   .page6-title {
     font-size: 25px;
     line-height: 30px;
-    width: 90vw;
-    margin: 0 20vw 0 0;
   }
-
-  .page6-text-wrapper {
-    padding-top: 5vh;
-    width: 90vw;
-    height: auto;
-    margin: 0 15vw 0 0;
-  }
-
-  .page6-people-in-lab-img {
-    width: 90vw;
-    margin: 5vh 0 10vh;
-  }
-
   .page6-text {
     font-size: 16px;
     line-height: 24px;
   }
-
   .page6-ngramma {
-    left: -15vw;
     position: relative;
-    margin-top: 5vh;
+    margin-top: 25%;
   }
-
-  #page7::before {
-    content: " ";
-    position: fixed;
-    background: #092847;
-    display: block;
-    height: 350px;
-    width: 1000px;
+  .page6-people-in-lab-img {
+    width: 280px;
+    height: 454px;
+    margin: 5vh 0 10vh;
   }
 
   .page7-content-block {
-    height: 500px;
+    height: fit-content;
   }
-
   #page7-animated-block {
-    height: 500px;
+    height: fit-content;
   }
-
+  #page7-trigger0 {
+    top: 50vh;
+  }
   .page7-top-svg {
-    transform: translateX(-1050px);
-    width: 1500px;
-    height: 200px;
+    /* transform: translateX(-60%); */
+    transform: translateX(-2990px);
+    background-size: contain;
+    height: 50vh;
   }
-
-  .page7-bottom-svg {
-    transform: translateX(-60px);
-    width: 1500px;
-    height: 200px;
-  }
-
   .fishRightPage7 {
-    transform: translateX(-33%);
+    /* transform: translateX(-34%); */
+    transform: translateX(-1405px);
   }
-
+  .page7-bottom-svg {
+    /* transform: translateX(-34%); */
+    transform: translateX(-1450px);
+    background-size: contain;
+    height: 50vh;
+  }
   .fishLeftPage7 {
-    transform: translateX(-34.5%);
+    /* transform: translateX(-59%); */
+    transform: translateX(-2945px);
   }
-
-  #page7-content-wrapper {
-    padding-top: 350px;
-  }
-
   .zoomed {
     transform: scale(35) translateY(-1.5%) translateX(1.5%);
+  }
+
+  .page8-img-building {
+    height: 100vh;
+    background: url(./assets/building_mobile.png) no-repeat center top fixed;
   }
 
   .page9-content-block {
     flex-direction: column;
   }
-
   .page9-left-block {
     padding: 100px 0 50px;
+    width: 100%;
   }
-
   .page9-img-building-small {
-    width: 90vw;
+    width: 100%;
   }
-
   .page9-img-lady {
-    width: 90vw;
+    width: 100%;
     margin-top: 5vw;
   }
-
-  .page9-subtitle {
-    font-size: 16px;
+  .page9-right-block {
+    display: inline-block;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 0;
   }
-
   .page9-title {
     font-size: 21px;
     line-height: 25px;
   }
-
-  .page9-text {
-    font-size: 18px;
-    line-height: 27px;
-  }
-
-  .page9-right-block {
-    display: inline-block;
-    flex-direction: column;
-    width: 90vw;
-    height: auto;
-    padding: 0;
-  }
-
   .page9-text-wrapper {
     padding-top: 5vh;
     display: flex;
     flex-direction: column;
   }
-
   .page9-inner-text-wrapper {
-    height: auto;
-    width: 90vw;
-    margin: 5vh 0 0;
+    width: 100%;
+    margin: 5% 0 0;
+  }
+  .page9-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .page9-ngramma {
+    height: 26px;
+    width: 26px;
+    margin: 15% 0;
   }
 
   .page10-content-block._content-padding {
     padding: 50vh 60px;
   }
-
   .page10-text-wrapper {
     height: auto;
     width: auto;
   }
-
   #page10-text {
     font-size: 20px;
     line-height: 30px;
