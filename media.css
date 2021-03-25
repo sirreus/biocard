@@ -14,7 +14,7 @@ html {
   height: 1600px;
 }
 
-/* стили для 13 дюймовых мониторов */
+/* стили для 13 дюймовых мониторов и новых планшетов */
 @media screen and (min-width: 1025px) and (max-width: 1439px) {
   .start-page-title-wrapper {
     width: 700px;
@@ -245,184 +245,196 @@ html {
   }
 }
 
-/* стили для планшетов */
-/* @media screen and (min-width: 1050px) and (max-width: 1380px) {
+/* стили для iPad mini и iPad 2 и старых планшетов */
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  ._content-padding {
+    padding: 0 60px;
+  }
+  .start-page-content-wrapper {
+  }
   .start-page-title-wrapper {
-    width: 700px;
+    width: auto;
     height: auto;
   }
-
   .start-page-title {
-    font-size: 110px;
-    line-height: 103px;
+    font-size: 90px;
+    line-height: 85px;
   }
-
+  .start-page-text-wrapper {
+    height: 65px;
+    width: 60%;
+    margin-left: 10%;
+  }
   .start-page-text {
     font-size: 18px;
     line-height: 23px;
   }
 
-  ._content-padding {
-    padding: 0 60px;
-  }
-
-  .start-page-img-wrapper {
-    padding: 0 355px 115px 0;
-    margin-top: 30px;
-  }
-
-  .start-page-content-wrapper {
-  }
-
-  .page2-text-wrapper {
-    padding: 400px 0 0 114px;
-  }
-
   .page2-title {
-    font-size: 50px;
-    line-height: 57px;
+    font-size: 42px;
+    line-height: 48px;
     text-align: left;
   }
-
-  .page2-text-wrapper {
-    width: 456px;
+  .page2-img-wrapper {
+    width: 294px;
+    height: 298px;
   }
-
+  .page2-photo1 {
+    background-size: 80%;
+  }
+  .page2-photo2 {
+    background-size: 80%;
+  }
+  .page2-photo3 {
+    background-size: 80%;
+  }
+  .page2-text-wrapper {
+    width: 50%;
+    padding: 60% 0 0 10%;
+  }
   .page2-text {
     font-size: 18px;
     line-height: 25px;
   }
-
-  .page3-content-block {
-    padding: 50px 0 180px 0;
+  #page2-trigger0 {
+    top: 20%;
+  }
+  #page2-trigger1 {
+    top: 25%;
+  }
+  #page2-trigger2 {
+    top: 33%;
+  }
+  #page2-trigger3 {
+    top: 42%;
   }
 
+  .page3-content-block {
+    padding: 140px 0 800px 0;
+  }
+  .page3-title-wrapper1 {
+    left: -103%;
+  }
   .page3-title-text1 {
     font-size: 200px;
     line-height: 190px;
   }
-
+  .page3-title-wrapper2 {
+    right: -192%;
+  }
   .page3-title-text2 {
     font-size: 200px;
     line-height: 190px;
   }
-
-  .page3-title-wrapper1 {
-    top: 40px;
-    left: -78%;
-  }
-
-  .page3-title-wrapper2 {
-    right: -137%;
-  }
-
   .fishRightFull {
-    left: 1780px;
+    left: 100%;
   }
-
   .fishLeftFull {
-    right: 90%;
+    right: 61%;
   }
 
   .page4-content-block {
-    padding: 500px 200px 120px 0;
+    padding: 42% 10% 0 0;
   }
-
+  .page4-title1-wrapper {
+    margin-right: 30px;
+  }
   .page4-title1-text {
     font-size: 100px;
     line-height: 95px;
   }
-
+  .page4-title2-wrapper {
+    justify-content: flex-end;
+  }
   .page4-title2-text {
     font-size: 100px;
     line-height: 95px;
   }
-
   .page4-subtitle {
     font-size: 14px;
-    max-width: 200px;
+    max-width: 160px;
+  }
+  .page4-text-wrapper {
+    padding: 120px 0 0 365px;
+  }
+  .page4-text {
+    font-size: 18px;
+    line-height: 25px;
   }
 
-  .page4-title2-wrapper {
-    justify-content: flex-end;
+  .page5-content-wrapper {
+    padding-top: 0px;
   }
-
+  .page5-left-block {
+    padding: 0 80px 125px 0;
+  }
   .page5-subtitle {
     font-size: 16px;
   }
-
   .page5-title {
     font-size: 30px;
     line-height: 36px;
   }
-
   .page5-text {
     font-size: 18px;
     line-height: 27px;
     height: auto;
     margin: 0;
   }
-
   .page5-woman-img {
-    width: 550px;
+    width: 404px;
+    height: 633px;
+    margin: 0 0 auto;
   }
 
-  .page5-left-block {
-    padding: 125px 0 80px;
+  .page6-left-block {
+    width: 600px;
+    padding: 0 0 500px 0;
   }
-
-  .page6-subtitle {
-    font-size: 16px;
-  }
-
   .page6-title {
     font-size: 30px;
     line-height: 36px;
   }
-
   .page6-text {
     font-size: 18px;
     line-height: 27px;
   }
-
-  .page6-left-block {
-    padding: 40px 0 125px;
-  }
-
   .page6-text-wrapper {
-    margin-right: 100px;
-    padding-top: 0;
+    padding: 60px 25px 0 0;
+  }
+  .page6-people-in-lab-img {
+    width: 261px;
+    height: 415px;
+    margin: 22% 0 auto 5%;
   }
 
+  #page7-trigger0 {
+    top: 27%;
+  }
+  .page7-content-block {
+    height: auto;
+  }
+  #page7-animated-block {
+    height: auto;
+  }
   .page7-top-svg {
-    transform: translateX(-3150px);
+    height: 405px;
+    transform: translateX(-64%);
+    background-size: 90%;
   }
-
+  .page7-bottom-svg {
+    height: 405px;
+    transform: translateX(-15%);
+    background-size: 90%;
+  }
   .fishRightPage7 {
-    transform: translateX(-31%);
+    transform: translateX(-39%);
   }
-
   .fishLeftPage7 {
-    transform: translateX(-35.3%);
+    transform: translateX(-39%);
   }
-
-  .page9-subtitle {
-    font-size: 16px;
-  }
-
-  .page9-text {
-    font-size: 18px;
-    line-height: 28px;
-  }
-
-  .page9-ngramma {
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-
-  .page9-title {
-    font-size: 25px;
-    line-height: 35px;
+  .zoomed {
+    transform: scale(30) translateY(-21%) translateX(1.7%);
   }
 
   .page9-right-block {
@@ -432,20 +444,34 @@ html {
     height: auto;
     padding: 16vh 0 10vh 5vw;
   }
-
+  .page9-title {
+    font-size: 25px;
+    line-height: 35px;
+  }
   .page9-inner-text-wrapper {
     width: 35vw;
+  }
+  .page9-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .page9-ngramma {
+    margin-left: 60px;
+    margin-right: 60px;
   }
 
   .page10-content-block._content-padding {
     padding: 50vh 60px;
   }
-
-  .page10-text {
-    font-size: 26px;
-    line-height: 34px;
+  .page10-text-wrapper {
+    width: 680px;
+    height: 144px;
   }
-} */
+  .page10-text {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
 
 /* @media screen and (min-width: 800px) and (max-width: 1049px) {
   .start-page-title {

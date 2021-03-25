@@ -120,15 +120,20 @@
               .addIndicators()
               .addTo(controller);
             
-          if($(window).width() < 1440) { 
+          if( ($(window).width() > 1024) && ($(window).width()) < 1440) { 
             var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger0", duration: '85%'})
               .setPin("#page2-title-wrapper")
-              .addIndicators({name: "text up"})
+              .addIndicators({name: "text up macbook13"})
+              .addTo(controller);
+          } else if(($(window).width() >= 800) && ($(window).width() <= 1024)) {
+            var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger0", duration: '60%'})
+              .setPin("#page2-title-wrapper")
+              .addIndicators({name: "text up ipad mini"})
               .addTo(controller);
           } else {
             var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger0", duration: '73%'})
               .setPin("#page2-title-wrapper")
-              .addIndicators({name: "text up"})
+              .addIndicators({name: "text up macbook15"})
               .addTo(controller);
           }
         </script>
@@ -243,11 +248,25 @@
               .addTo(controller);
 
             ["#page4-title-block", "#page4-text-wrapper"].forEach(elem => {
-              var elemDown = TweenMax.to(elem, 1, {transform: 'translateY(600px)'});
-              var scene7 = new ScrollMagic.Scene({triggerElement: "#page4-trigger5", duration: '100%'})
-                .setTween(elemDown)
-                .addIndicators({name: "elem down"})
-                .addTo(controller);
+              if( ($(window).width() > 1024) && ($(window).width()) < 1440) { 
+                var elemDown = TweenMax.to(elem, 1, {transform: 'translateY(600px)'});
+                var scene7 = new ScrollMagic.Scene({triggerElement: "#page4-trigger5", duration: '100%'})
+                  .setTween(elemDown)
+                  .addIndicators({name: "elem down"})
+                  .addTo(controller);
+              } else if(($(window).width() >= 800) && ($(window).width() <= 1024)) {
+                var elemDown = TweenMax.to(elem, 1, {transform: 'translateY(700px)'});
+                var scene7 = new ScrollMagic.Scene({triggerElement: "#page4-trigger5", duration: '100%'})
+                  .setTween(elemDown)
+                  .addIndicators({name: "elem down"})
+                  .addTo(controller);
+              } else {
+                var elemDown = TweenMax.to(elem, 1, {transform: 'translateY(500px)'});
+                var scene7 = new ScrollMagic.Scene({triggerElement: "#page4-trigger5", duration: '100%'})
+                  .setTween(elemDown)
+                  .addIndicators({name: "elem down"})
+                  .addTo(controller);
+              }
             })
         </script>
       </div>
@@ -365,7 +384,7 @@
             <div id="page9-trigger1" class="spacer s0"></div>
             <div class="page9-left-block">
               <img src="./assets/building_small.png" class="page9-img-building-small" />
-              <img src="./assets/lady.png" class="page9-img-lady" />
+              <img src="./assets/lady_page9.png" class="page9-img-lady" />
             </div>
             <div class="page9-right-block">
               <p class="page9-title">
