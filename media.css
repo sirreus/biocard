@@ -619,22 +619,19 @@ html {
     height: 278.7px;
   }
   .page3-title-wrapper1 {
-    /* left: -163%; */
-    left: -520px;
+    left: -530px;
   }
   .page3-title-text1 {
     font-size: 100px;
     line-height: 95px;
   }
   .fishRightFull {
-    /* left: 100%; */
-    right: -1310px;
+    right: -1325px;
     left: initial;
   }
   .page3-title-wrapper2 {
     bottom: 5%;
-    /* right: -615%; */
-    right: -1970px;
+    right: -1985px;
   }
   .page3-title-text2 {
     font-size: 100px;
@@ -642,7 +639,7 @@ html {
   }
   .fishLeftFull {
     right: initial;
-    left: -785px;
+    left: -800px;
   }
 
   ._parallax-bg-man {
