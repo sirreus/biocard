@@ -806,7 +806,8 @@ html {
 
   .page8-img-building {
     height: 100vh;
-    background: url(./assets/building_mobile.png) no-repeat center top fixed;
+    background: url(./assets/building_mobile.png) no-repeat center top;
+    background-attachment: scroll;
   }
 
   .page9-content-block {
