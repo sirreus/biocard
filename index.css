@@ -2,6 +2,11 @@
   overflow: hidden;
 }
 
+.fade,
+.fadeonload {
+  opacity: 0;
+}
+
 .header {
   position: fixed;
   top: 0%;
@@ -22,6 +27,9 @@
   height: 56px;
   cursor: pointer;
   background: url(./assets/close-button.svg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 .__to-open {
@@ -85,6 +93,9 @@
   left: 50%;
   transform: translate(-50%, 0);
   background: url(./assets/building_small.png) no-repeat center center;
+  -webkit-background-size: 266px 184px;
+  -moz-background-size: 266px 184px;
+  -o-background-size: 266px 184px;
   background-size: 266px 184px;
   width: 266px;
   height: 184px;
@@ -93,6 +104,9 @@
 .link-img {
   position: absolute;
   background: url(./assets/building_small.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   opacity: 1;
 }
@@ -173,6 +187,9 @@
   width: 59px;
   height: 59px;
   background: url(./assets/arrow-button.svg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -231,6 +248,9 @@
   width: 306px;
   transform: rotate(-6.7deg);
   background: url(./assets/page2-photo1.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   transition: opacity 0.7s ease;
 }
@@ -241,6 +261,9 @@
   width: 404px;
   transform: rotate(11.46deg);
   background: url(./assets/page2-photo2.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   transition: opacity 0.7s ease;
 }
@@ -250,6 +273,9 @@
   opacity: 0;
   transform: rotate(4.58deg);
   background: url(./assets/page2-photo3.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   transition: opacity 0.7s ease;
 }
@@ -337,6 +363,9 @@
   width: 100%;
   height: 1922px;
   background: url(./assets/page2-photo3.png) no-repeat center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   padding-bottom: 45%;
 }
@@ -445,6 +474,9 @@
   height: 259px;
   width: 384px;
   background: url(./assets/devices.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 .page5-text-wrapper {
@@ -492,6 +524,9 @@
   align-self: center;
   margin: 0 0 0 auto;
   background: url(./assets/woman-in-lab.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -535,6 +570,9 @@
   width: 34px;
   margin-top: 16px;
   background: url(./assets/n-gramma.svg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 .page6-people-in-lab-img {
@@ -543,6 +581,9 @@
   align-self: center;
   margin: auto;
   background: url(./assets/people-in-lab.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -550,44 +591,55 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 1388px;
+  /* height: 1388px; */
+  /* height: 100vh; */
   background: url(./assets/building.png) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   z-index: 1;
 }
 #page7-trigger0 {
   position: absolute;
-  top: 32.5%;
+  top: 50vh;
 }
 #page7-trigger1 {
   position: absolute;
-  top: 36%;
+  top: 60vh;
 }
 #page7-trigger2 {
   position: absolute;
-  top: 750px;
+  top: 100vh;
 }
 #page7-animated-block {
   width: 100%;
-  height: 1388px;
+  /* height: 1388px; */
+  /* height: 100vh; */
   overflow: hidden;
 }
 .zoomed {
-  transform: scale(30) translateY(3%) translateX(2.65%);
+  transform: scale(30) translateY(-20%) translateX(2.7%);
 }
 .page7-top-svg {
-  transform: translateX(-66%);
+  transform: translateX(-65%);
   width: 4777px;
   height: 450px;
   background: url(./assets/page7_autumn2001.svg) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
   background-size: 100%;
   z-index: 2;
 }
 .page7-bottom-svg {
-  transform: translateX(-5%);
+  transform: translateX(-6%);
   width: 4777px;
   height: 450px;
   background: url(./assets/page7_lyubuchany.svg) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
   background-size: 100%;
   z-index: 2;
 }
@@ -596,6 +648,9 @@
   width: 100%;
   height: 900px;
   background: url(./assets/building.png) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   z-index: 1;
 }
@@ -658,6 +713,9 @@
   width: 29px;
   margin-right: 15%;
   background: url(./assets/n-gramma.svg) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
   background-size: 100%;
 }
 

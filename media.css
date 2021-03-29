@@ -73,16 +73,18 @@ html {
     line-height: 190px;
   }
   .page3-title-wrapper1 {
-    left: -82%;
+    left: -1050px;
   }
   .fishRightFull {
-    left: 100%;
+    left: initial;
+    right: -1330px;
   }
   .page3-title-wrapper2 {
-    right: -155%;
+    right: -1980px;
   }
   .fishLeftFull {
-    right: 70%;
+    right: initial;
+    left: -1651px;
   }
 
   ._parallax-bg-man {
@@ -182,27 +184,27 @@ html {
     background: url(./assets/people-in-lab.png) no-repeat left 15% center;
   }
 
-  #page7-trigger0 {
-    top: 29%;
-  }
   .page7-top-svg {
-    height: 405px;
+    height: 53vh;
     transform: translateX(-64%);
-    background-size: 90%;
+    background-size: contain;
   }
   .fishRightPage7 {
+    -webkit-transform: translateX(-35.5%);
     transform: translateX(-36.5%);
   }
   .page7-bottom-svg {
-    height: 405px;
+    height: 53vh;
     transform: translateX(-10%);
-    background-size: 90%;
+    background-size: contain;
   }
   .fishLeftPage7 {
+    -webkit-transform: translateX(-35.5%);
     transform: translateX(-36.5%);
   }
   .zoomed {
-    transform: scale(30) translateY(8%) translateX(2.07%);
+    -webkit-transform: scale(30) translateY(-22.5%) translateX(-10%);
+    transform: scale(30) translateY(-22%) translateX(2.2%);
   }
 
   .page8-img-building {
@@ -313,14 +315,14 @@ html {
     padding: 140px 0 800px 0;
   }
   .page3-title-wrapper1 {
-    left: -103%;
+    left: -1050px;
   }
   .page3-title-text1 {
     font-size: 200px;
     line-height: 190px;
   }
   .page3-title-wrapper2 {
-    right: -192%;
+    right: -1980px;
   }
   .page3-title-text2 {
     font-size: 200px;
@@ -474,7 +476,7 @@ html {
 }
 
 /* стили для iPhone SE */
-@media screen and (min-width: 320px) and (max-width: 799px) {
+@media screen and (min-width: 310px) and (max-width: 799px) {
   html,
   body {
     max-width: 100vw;
@@ -517,7 +519,7 @@ html {
   .start-page-content-wrapper {
     flex-direction: column;
     align-items: flex-start;
-    padding: 50% 0;
+    padding: 40vh 0;
   }
   .start-page-title-wrapper {
     width: auto;
@@ -543,8 +545,10 @@ html {
     margin-top: -50px;
   }
   .arrow-button {
-    bottom: 5vh;
     position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .page2-content-block {

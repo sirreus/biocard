@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="font.css" />
     <link rel="stylesheet" href="media.css" />
@@ -20,7 +21,7 @@
   </head>
 
   <header>
-    <div class="header">
+    <div class="header fadeonload">
       <img class="logo" src="./assets/logo-white.svg" />
       <div type="button" id="menu-button" class="burger-button __to-open"></div>
     </div>
@@ -54,13 +55,13 @@
           </script>
           <div class="start-page-content-wrapper">
             <div class="start-page-title-wrapper">
-              <p class="start-page-title">Мы помним, как все начиналось</p>
+              <p class="start-page-title fadeonload">Мы помним, как все начиналось</p>
             </div>
             <div class="start-page-text-wrapper">
-              <p class="start-page-text">
+              <p class="start-page-text fadeonload">
                 В нашей истории было много замечательных моментов
               </p>
-              <div class="arrow-button" type="button" onclick="goToNextPage()"></div>
+              <div class="arrow-button fadeonload" type="button" onclick="goToNextPage()"></div>
             </div>
           </div>
       </div>
@@ -72,10 +73,10 @@
           <div id="page2-trigger2" class="spacer s0"></div>
           <div id="page2-trigger3" class="spacer s0"></div>
           <div class="page2-mobile-title">
-            <p class="page2-mobile-title-text">Из хаоса к порядку: рождение BIOCAD</p>
+            <p class="page2-mobile-title-text fade">Из хаоса к порядку: рождение BIOCAD</p>
           </div>
           <div id="page2-title-wrapper" class="page2-title-wrapper">
-            <p class="page2-title">Из хаоса к порядку: рождение BIOCAD</p>
+            <p class="page2-title fade">Из хаоса к порядку: рождение BIOCAD</p>
             <div class="page2-img-wrapper">
               <div id="page2-photo1" class="page2-photo1"></div>
               <div id="page2-photo2" class="page2-photo2"></div>
@@ -99,48 +100,6 @@
             </p>
           </div>
         </div>
-
-        <script>
-          if($(window).width() > 760) { 
-            var photo1 = document.getElementById("page2-photo1");
-            var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger1"})
-              .on("enter", function () {photo1.style.opacity = "1";})
-              .on("leave", function () {photo1.style.opacity = "0";})
-              .addIndicators()
-              .addTo(controller);
-
-            var photo2 = document.getElementById("page2-photo2");
-            var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger2"})
-              .on("enter", function () {photo2.style.opacity = "1";})
-              .on("leave", function () {photo2.style.opacity = "0";})
-              .addIndicators()
-              .addTo(controller);
-
-            var photo3 = document.getElementById("page2-photo3");
-            var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger3"})
-              .on("enter", function () {photo3.style.opacity = "1";})
-              .on("leave", function () {photo3.style.opacity = "0";})
-              .addIndicators()
-              .addTo(controller);
-            
-            if( ($(window).width() > 1024) && ($(window).width()) < 1440) { 
-              var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger0", duration: '85%'})
-                .setPin("#page2-title-wrapper")
-                .addIndicators({name: "text up macbook13"})
-                .addTo(controller);
-            } else if(($(window).width() >= 800) && ($(window).width() <= 1024)) {
-              var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger0", duration: '60%'})
-                .setPin("#page2-title-wrapper")
-                .addIndicators({name: "text up ipad mini"})
-                .addTo(controller);
-            } else {
-              var scene = new ScrollMagic.Scene({triggerElement: "#page2-trigger0", duration: '73%'})
-                .setPin("#page2-title-wrapper")
-                .addIndicators({name: "text up macbook15"})
-                .addTo(controller);
-            }
-          }
-        </script>
       </div>
 
       <div class="page page3-content-block _grey" id="step1">
@@ -155,43 +114,6 @@
             <p class="page3-title-text2">человек и мечта</p>
           </div>
         </div>
-
-        <script>
-          var content = document.getElementById("page3-content-wrapper");
-          var scene1 = new ScrollMagic.Scene({triggerElement: "#page3-trigger1", duration: '135%'})
-              .setPin(content)
-              .addIndicators({name: "pin content"})
-              .addTo(controller);
-
-          var tweenLeft = TweenMax.to("#page3-title-wrapper1", 1, {className: "+=fishRightFull"});
-          var scene2 = new ScrollMagic.Scene({triggerElement: "#page3-trigger2", duration: '45%'})
-            .setTween(tweenLeft)
-            .addIndicators({name: "go to right"})
-            .addTo(controller);
-
-          var tweenRight = TweenMax.to("#page3-title-wrapper2", 1, {className: "+=fishLeftFull"});
-          var scene3 = new ScrollMagic.Scene({triggerElement: "#page3-trigger2", duration: '45%'})
-            .setTween(tweenRight)
-            .addIndicators({name: "go to left"})
-            .addTo(controller);
-          
-          var action = new TimelineMax().to('#page3-title-wrapper1',8.5,{
-            bezier:{values:[
-              {x:0, y:0}, 
-              {x:1100, y:0}, 
-              {x:3000, y:0}
-          ]}, ease: Power2.easeOut},0).to('#page3-title-wrapper2',8.5,{
-            bezier:{values:[
-              {x:0, y:0}, 
-              {x:-1500, y:0}, 
-              {x:-3500, y:0}
-          ]}, ease: Power2.easeOut},0);
-
-          var scene2 = new ScrollMagic.Scene({triggerElement: "#page3-trigger2", duration: '800%'})
-            .setTween(action)
-            .addIndicators({name: "smooth scroll"})
-            .addTo(controller);
-        </script>
       </div>
 
       <div class="page _parallax-bg-man">
@@ -297,14 +219,14 @@
       <div class="page _content-padding _pr75 _grey"">
         <div class="page5-content-wrapper">
           <div class="page5-left-block">
-            <div class="page5-img"></div>
+            <div class="page5-img fade"></div>
             <div class="page5-text-wrapper">
-              <p class="page5-subtitle">Дмитрий Морозов:</p>
-              <p class="page5-title">
+              <p class="page5-subtitle fade">Дмитрий Морозов:</p>
+              <p class="page5-title fade">
                 “&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В 90-ые и начале нулевых российская промышленность лежала в
                 руинах.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“
               </p>
-              <p class="page5-text">
+              <p class="page5-text fade">
                 Учёные и специалисты продолжали заниматься исследованиями, не
                 расчитывая на помощь тогдашнего государства. Их самоотверженный
                 труд не оплачивался. Одно из таких учреждений — будущая база
@@ -315,25 +237,25 @@
               </p>
             </div>
           </div>
-          <div class="page5-woman-img"></div>
+          <div class="page5-woman-img fade"></div>
         </div>
       </div>
 
       <div class="page _content-padding-small _grey"">
         <div class="page6-content-wrapper">
           <div class="page6-left-block">
-            <p class="page6-title">
+            <p class="page6-title fade">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Весной 2001 дела в Институте иммунологии шли настолько плохо, что один
               из корпусов был выставлен на торги.
             </p>
             <div id="page6-trigger1" class="spacer s0"></div>
             <div class="page6-text-wrapper">
-              <p class="page6-text">
+              <p class="page6-text fade">
                 Ведь, периодически Институт получал гранты от МНТЦ — международной
                 организации, которая занималась утилизацией биологического оружия,
                 но спонсировалась Государственным департаментом США.
               </p>
-              <p class="page6-text">
+              <p class="page6-text fade">
                 Удивительно, что всего за 20 дет до этого, в засекреченном Институте
                 проводили исследования возбудителей чумы и разрабатывали способы
                 защиты от бактеорологического оружия на базе интерферона — белка,
@@ -343,7 +265,7 @@
             </div>
             <div class="page6-ngramma"></div>
           </div>
-          <div class="page6-people-in-lab-img"></div>
+          <div class="page6-people-in-lab-img fade"></div>
         </div>
 
         <script>
@@ -370,13 +292,13 @@
 
         <script>
           var content = document.getElementById("page7-content-wrapper");
-          var scene1 = new ScrollMagic.Scene({triggerElement: "#page7-trigger0", duration: '85%'})
+          var scene1 = new ScrollMagic.Scene({triggerElement: "#page7-trigger0", duration: '100%'})
               .setPin(content)
               .addIndicators({name: "pin page"})
               .addTo(controller);
           
           if($(window).width() >= 800) {
-            var page7ScrollDuration = '22%'
+            var page7ScrollDuration = '23%'
           } else {
             var page7ScrollDuration = '42%'
           }
@@ -396,7 +318,7 @@
           if($(window).width() >= 500) {
             var animatedBlock = document.getElementById("page7-animated-block")
             var zoomed = TweenMax.to(animatedBlock, 1, {className: "+=zoomed"});
-            var pinSceneIntro = new ScrollMagic.Scene({triggerElement: '#page7-trigger2', duration: '50%'})
+            var pinSceneIntro = new ScrollMagic.Scene({triggerElement: '#page7-trigger2', duration: '70%'})
               .setTween(zoomed)
               .addIndicators({name: "zoom"})
               .addTo(controller)
@@ -412,11 +334,11 @@
           <div class="page9-content-block _content-padding">
             <div id="page9-trigger1" class="spacer s0"></div>
             <div class="page9-left-block">
-              <img src="./assets/building_small.png" class="page9-img-building-small" />
-              <img src="./assets/lady_page9.png" class="page9-img-lady" />
+              <img src="./assets/building_small.png" class="page9-img-building-small fade" />
+              <img src="./assets/lady_page9.png" class="page9-img-lady fade" />
             </div>
             <div class="page9-right-block">
-              <p class="page9-title">
+              <p class="page9-title fade">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8
                 ноября 2001 года подписано соглашение между Институтом иммунологии
                 и BIOCAD. Филиал института стал называться Центром инженерной
@@ -425,14 +347,14 @@
               <div class="page9-text-wrapper">
                 <div class="page9-ngramma"></div>
                 <div class="page9-inner-text-wrapper">
-                  <p class="page9-text">
+                  <p class="page9-text fade">
                     Получив научную базу, мы занялись строительством первого
                     фармацевтического завода с нуля. За два года, у нас получилось
                     преобразовать советский академический подход к науке и
                     подготовиться к запуску первого коммерческого продукта —
                     оригинального лекарственного препарата, защищённого патентом.
                   </p>
-                  <p class="page9-text">
+                  <p class="page9-text fade">
                     С апреля 2002 мы начали разрабатывать Генферон — оригинальный
                     иммуномодулятор на основе интерферона альфа-2b. Действующее
                     вещество препарата — белок, который вырабатывается иммунными
@@ -476,7 +398,7 @@
               if($(window).width() < 800) {
                 var page7DarkOffset = '-60%'
               } else {
-                var page7DarkOffset = '40%'
+                var page7DarkOffset = '-100%'
               }
               var scene1 = new ScrollMagic.Scene({triggerElement: "#page10-trigger1", duration: '35%', offset: page7DarkOffset})
                 .setTween(darked)
@@ -539,6 +461,9 @@
         });
       </script>
 
+      <script type="text/javascript" src="js/page2-animation.js"></script>
+      <script type="text/javascript" src="js/page3-animation.js"></script>
+      <script type="text/javascript" src="js/fade-effect.js"></script>
       <script type="text/javascript" src="js/smooth-scroll-animation.js"></script>
     </main>
   </body>
