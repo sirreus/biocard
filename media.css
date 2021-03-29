@@ -771,7 +771,8 @@ html {
   }
 
   .page7-content-block {
-    height: fit-content;
+    height: 100vh;
+    background: url(./assets/building.png) no-repeat left 75% top 100%;
     background-attachment: scroll;
   }
   #page7-animated-block {
@@ -806,7 +807,7 @@ html {
 
   .page8-img-building {
     height: 100vh;
-    background: url(./assets/building_mobile.png) no-repeat center top;
+    background: url(./assets/building.png) no-repeat left 75% top 100%;
     background-attachment: scroll;
   }
 
