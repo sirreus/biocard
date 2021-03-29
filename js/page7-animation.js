@@ -1,3 +1,5 @@
+var controller = new ScrollMagic.Controller();
+
 if ($(window).width() >= 800) {
   var page7PinDuration = "100%";
 } else if ($(window).width() < 800) {

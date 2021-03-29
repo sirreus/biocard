@@ -1,4 +1,4 @@
-var height = $(window).height();
+var controller = new ScrollMagic.Controller();
 
 if ($(window).width() >= 1600) {
   var page3Duration = "180%";

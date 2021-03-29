@@ -1,3 +1,5 @@
+var controller = new ScrollMagic.Controller();
+
 if ($(window).width() > 760) {
   var photo1 = document.getElementById("page2-photo1");
   var scene = new ScrollMagic.Scene({ triggerElement: "#page2-trigger1" })

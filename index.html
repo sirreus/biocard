@@ -20,19 +20,14 @@
 	  <script type="text/javascript" src="animation-libs/debug.addIndicators.js"></script>
   </head>
 
-  <header>
-    <div class="header fadeonload">
-      <img class="logo" src="./assets/logo-white.svg" />
-      <div type="button" id="menu-button" class="burger-button __to-open"></div>
-    </div>
-
-  </header>
-
   <body>
-    <script>
-      // init controller
-      var controller = new ScrollMagic.Controller();
-    </script>
+    <header>
+      <div class="header fadeonload">
+        <img class="logo" src="./assets/logo-white.svg" />
+        <div type="button" id="menu-button" class="burger-button __to-open"></div>
+      </div>
+    </header>
+
     <main class="main">
       <section id="menu" class="burger-menu">
         <div class="link-list">
@@ -66,7 +61,7 @@
           </div>
       </section>
 
-      <div class="page _content-padding _grey">
+      <section class="page _content-padding _grey">
         <div class="page2-content-block _pb50">
           <div id="page2-trigger0" class="spacer s0"></div>
           <div id="page2-trigger1" class="spacer s0"></div>
@@ -100,9 +95,9 @@
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="page page3-content-block _grey" id="step1">
+      <section class="page page3-content-block _grey" id="step1">
         <div id="page3-trigger1" class="spacer s0"></div>
         <div id="page3-trigger2" class="spacer s0"></div>
         <div id="page3-content-wrapper">
@@ -114,9 +109,9 @@
             <p class="page3-title-text2">человек и мечта</p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="page _parallax-bg-man">
+      <section class="page _parallax-bg-man">
         <div class="page4-gradient"></div>
         <div class="page4-content-block">
           <div id="qwer">
@@ -146,77 +141,9 @@
             </div>
           </div>
         </div>
+      </section>
 
-        <script>
-            var title1 = TweenMax.to("#page4-title1", 1, {className: "+=__visible"});
-            var scene1 = new ScrollMagic.Scene({triggerElement: "#page4-trigger1", duration: '35%'})
-              .setTween(title1)
-              .addIndicators({name: "show title1"})
-              .addTo(controller);
-
-            var title2 = TweenMax.to("#page4-title2", 1, {className: "+=__visible"});
-            var scene2 = new ScrollMagic.Scene({triggerElement: "#page4-trigger1", duration: '35%'})
-              .setTween(title2)
-              .addIndicators({name: "show title2"})
-              .addTo(controller);
-
-            var subtitle = TweenMax.to("#page4-subtitle", 1, {className: "+=__visible"});
-            var scene3 = new ScrollMagic.Scene({triggerElement: "#page4-trigger4", duration: '35%'})
-              .setTween(subtitle)
-              .addIndicators({name: "show subtitle"})
-              .addTo(controller);
-
-            var text = TweenMax.to("#page4-text", 1, {className: "+=__visible"});
-            var scene4 = new ScrollMagic.Scene({triggerElement: "#page4-trigger4", duration: '25%'})
-              .setTween(text)
-              .addIndicators({name: "show text"})
-              .addTo(controller);
-
-            var titleBlock = document.getElementById("page4-title-block");
-            var scene5 = new ScrollMagic.Scene({triggerElement: "#page4-trigger2", duration: '15%'})
-              .setPin(titleBlock)
-              .addIndicators({name: "pin title block"})
-              .addTo(controller);
-
-            if($(window).width() > 760) {
-              var subtitleUp = TweenMax.to("#page4-subtitle", 1, {transform: 'translateY(-150%)'});
-              var scene6 = new ScrollMagic.Scene({triggerElement: "#page4-trigger3", duration: '20%', offset: '-65%'})
-                .setTween(subtitleUp)
-                .addIndicators({name: "subtitle up"})
-                .addTo(controller);
-              
-              var subtitleUp = TweenMax.to("#page4-text", 1, {transform: 'translateY(-50%)'});
-              var scene6 = new ScrollMagic.Scene({triggerElement: "#page4-trigger3", duration: '20%', offset: '-65%'})
-                .setTween(subtitleUp)
-                .addIndicators({name: "text go up"})
-                .addTo(controller);
- 
-              ["#page4-title-block", "#page4-text-wrapper"].forEach(elem => {
-                if( ($(window).width() > 1024) && ($(window).width()) < 1440) { 
-                  var elemDown = TweenMax.to(elem, 1, {transform: 'translateY(600px)'});
-                  var scene7 = new ScrollMagic.Scene({triggerElement: "#page4-trigger5", duration: '100%'})
-                    .setTween(elemDown)
-                    .addIndicators({name: "elem down"})
-                    .addTo(controller);
-                } else if(($(window).width() >= 800) && ($(window).width() <= 1024)) {
-                  var elemDown = TweenMax.to(elem, 1, {transform: 'translateY(700px)'});
-                  var scene7 = new ScrollMagic.Scene({triggerElement: "#page4-trigger5", duration: '100%'})
-                    .setTween(elemDown)
-                    .addIndicators({name: "elem down"})
-                    .addTo(controller);
-                } else {
-                  var elemDown = TweenMax.to(elem, 1, {transform: 'translateY(500px)'});
-                  var scene7 = new ScrollMagic.Scene({triggerElement: "#page4-trigger5", duration: '100%'})
-                    .setTween(elemDown)
-                    .addIndicators({name: "elem down"})
-                    .addTo(controller);
-                }
-              })
-            }
-        </script>
-      </div>
-
-      <div class="page _content-padding _pr75 _grey"">
+      <section class="page _content-padding _pr75 _grey"">
         <div class="page5-content-wrapper">
           <div class="page5-left-block">
             <div class="page5-img fade"></div>
@@ -239,9 +166,9 @@
           </div>
           <div class="page5-woman-img fade"></div>
         </div>
-      </div>
+      </section>
 
-      <div class="page _content-padding-small _grey"">
+      <section class="page _content-padding-small _grey"">
         <div class="page6-content-wrapper">
           <div class="page6-left-block">
             <p class="page6-title fade">
@@ -267,17 +194,9 @@
           </div>
           <div class="page6-people-in-lab-img fade"></div>
         </div>
+      </section>
 
-        <script>
-          var rotate = TweenMax.to(".page6-ngramma", 1, {rotation: 720, ease: Linear.easeNone});
-          var scene = new ScrollMagic.Scene({triggerElement: "#page6-trigger1", duration: 1000, pushFollowers: false})
-                  .setTween(rotate)
-                  .addIndicators({name: "rotate ngramme"})
-                  .addTo(controller);
-        </script>
-      </div>
-
-      <div class="page">
+      <section class="page">
         <div id="page7" class="page7-content-block">
           <div id="page7-trigger0" class="spacer s0"></div>
           <div id="page7-trigger1" class="spacer s0"></div>
@@ -293,104 +212,56 @@
         <div class="page8-content-block">
           <div class="page8-img-building"></div>
         </div>
-      </div>
+      </section>
 
-      <div id="blue-page" class="page _blue">
-          <div class="page9-content-block _content-padding">
-            <div id="page9-trigger1" class="spacer s0"></div>
-            <div class="page9-left-block">
-              <img src="./assets/building_small.png" class="page9-img-building-small fade" />
-              <img src="./assets/lady_page9.png" class="page9-img-lady fade" />
-            </div>
-            <div class="page9-right-block">
-              <p class="page9-title fade">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8
-                ноября 2001 года подписано соглашение между Институтом иммунологии
-                и BIOCAD. Филиал института стал называться Центром инженерной
-                иммунологии.
-              </p>
-              <div class="page9-text-wrapper">
-                <div class="page9-ngramma"></div>
-                <div class="page9-inner-text-wrapper">
-                  <p class="page9-text fade">
-                    Получив научную базу, мы занялись строительством первого
-                    фармацевтического завода с нуля. За два года, у нас получилось
-                    преобразовать советский академический подход к науке и
-                    подготовиться к запуску первого коммерческого продукта —
-                    оригинального лекарственного препарата, защищённого патентом.
-                  </p>
-                  <p class="page9-text fade">
-                    С апреля 2002 мы начали разрабатывать Генферон — оригинальный
-                    иммуномодулятор на основе интерферона альфа-2b. Действующее
-                    вещество препарата — белок, который вырабатывается иммунными
-                    клетками и помогает организму бороться с вирусами.
-                  </p>
-                </div>
+      <section id="blue-page" class="page _blue">
+        <div class="page9-content-block _content-padding">
+          <div id="page9-trigger1" class="spacer s0"></div>
+          <div class="page9-left-block">
+            <img src="./assets/building_small.png" class="page9-img-building-small fade" />
+            <img src="./assets/lady_page9.png" class="page9-img-lady fade" />
+          </div>
+          <div class="page9-right-block">
+            <p class="page9-title fade">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8
+              ноября 2001 года подписано соглашение между Институтом иммунологии
+              и BIOCAD. Филиал института стал называться Центром инженерной
+              иммунологии.
+            </p>
+            <div class="page9-text-wrapper">
+              <div class="page9-ngramma"></div>
+              <div class="page9-inner-text-wrapper">
+                <p class="page9-text fade">
+                  Получив научную базу, мы занялись строительством первого
+                  фармацевтического завода с нуля. За два года, у нас получилось
+                  преобразовать советский академический подход к науке и
+                  подготовиться к запуску первого коммерческого продукта —
+                  оригинального лекарственного препарата, защищённого патентом.
+                </p>
+                <p class="page9-text fade">
+                  С апреля 2002 мы начали разрабатывать Генферон — оригинальный
+                  иммуномодулятор на основе интерферона альфа-2b. Действующее
+                  вещество препарата — белок, который вырабатывается иммунными
+                  клетками и помогает организму бороться с вирусами.
+                </p>
               </div>
             </div>
-
-            <script>
-              if($(window).width() < 800) {
-                var rotate = TweenMax.to(".page9-ngramma", 1, {rotation: 720, ease: Linear.easeNone});
-                var scene = new ScrollMagic.Scene({triggerElement: "#page9-trigger1", duration: '200%', pushFollowers: false})
-                        .setTween(rotate)
-                        .addIndicators({name: "rotate ngramme"})
-                        .addTo(controller);
-              } else {
-                var rotate = TweenMax.to(".page9-ngramma", 1, {rotation: 720, ease: Linear.easeNone});
-                var scene = new ScrollMagic.Scene({triggerElement: "#page9-trigger1", duration: '110%', pushFollowers: false})
-                        .setTween(rotate)
-                        .addIndicators({name: "rotate ngramme"})
-                        .addTo(controller);
-              }
-            </script>
           </div>
+        </div>
 
-          <div class="page10-content-block _content-padding">
-            <div id="page10-trigger1" class="spacer s0"></div>
-            <div id="page10-text-wrapper" class="page10-text-wrapper">
-              <p id="page10-text" class="page10-text">
-                А пока до выпуска
-                <span class="_highlights">Генферона</span> оставалось ещё
-                несколько лет, мы занялись
-                <span class="_highlights">созданием бифидобактерий</span> на базе
-                собственного производства в Петрово-Дальнем.
-              </p>
-            </div>
-
-            <script>
-              var darked = TweenMax.to("#blue-page", 1, {className: "+=__darkblue"});
-              if($(window).width() < 800) {
-                var page7DarkOffset = '-60%'
-              } else {
-                var page7DarkOffset = '-100%'
-              }
-              var scene1 = new ScrollMagic.Scene({triggerElement: "#page10-trigger1", duration: '35%', offset: page7DarkOffset})
-                .setTween(darked)
-                .addIndicators({name: "darked"})
-                .addTo(controller);
-
-              var text = TweenMax.to("#page10-text", 1, {className: "+=__visible"});
-              var scene1 = new ScrollMagic.Scene({triggerElement: "#page10-trigger1", duration: '35%', offset: '40%'})
-                .setTween(text)
-                .addIndicators({name: "show text"})
-                .addTo(controller);
-
-              var textBlock = document.getElementById("page10-text-wrapper");
-              if($(window).width() < 800) {
-                var page7PinDuration = '80%'
-                var page7PinOffset = '40%'
-              } else {
-                var page7PinDuration = '40%'
-                var page7PinOffset = '80%'
-              }
-              var scene2 = new ScrollMagic.Scene({triggerElement: "#page10-trigger1", duration: page7PinDuration, offset: page7PinOffset})
-                .setPin(textBlock)
-                .addIndicators({name: "pin tex"})
-                .addTo(controller);
-            </script>
+        <div class="page10-content-block _content-padding">
+          <div id="page10-trigger1" class="spacer s0"></div>
+          <div id="page10-text-wrapper" class="page10-text-wrapper">
+            <p id="page10-text" class="page10-text">
+              А пока до выпуска
+              <span class="_highlights">Генферона</span> оставалось ещё
+              несколько лет, мы занялись
+              <span class="_highlights">созданием бифидобактерий</span> на базе
+              собственного производства в Петрово-Дальнем.
+            </p>
           </div>
-      </div>
+        </div>
+      </section>
 
       <script id="toggle-open-burger-menu">
         $(document).ready(function() {
@@ -428,7 +299,11 @@
 
       <script type="text/javascript" src="js/page2-animation.js"></script>
       <script type="text/javascript" src="js/page3-animation.js"></script>
+      <script type="text/javascript" src="js/page4-animation.js"></script>
+      <script type="text/javascript" src="js/page6-animation.js"></script>
       <script type="text/javascript" src="js/page7-animation.js"></script>
+      <script type="text/javascript" src="js/page9-animation.js"></script>
+      <script type="text/javascript" src="js/page10-animation.js"></script>
       <script type="text/javascript" src="js/fadeIn-effect.js"></script>
       <script type="text/javascript" src="js/smooth-scroll-animation.js"></script>
     </main>
