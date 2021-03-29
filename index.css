@@ -118,11 +118,12 @@
 }
 
 .start-page {
-  background: url(./assets/bg.png) no-repeat center center fixed;
-  background-size: cover;
+  background: url(./assets/bg.png) no-repeat center center;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-size: cover;
 }
 
 ._grey {
