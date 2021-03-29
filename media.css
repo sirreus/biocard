@@ -772,6 +772,7 @@ html {
 
   .page7-content-block {
     height: fit-content;
+    background-attachment: scroll;
   }
   #page7-animated-block {
     height: fit-content;
