@@ -1,22 +1,29 @@
+var height = $(window).height();
+
 if ($(window).width() >= 1600) {
   var page3Duration = "180%";
-  var page3Offset = "60%";
+  var page3Offset = "0%";
+  var page3ScrollDuration = "150%";
   var page3ScrollOffset = page3Offset;
 } else if ($(window).width() >= 1420 && $(window).width() < 1600) {
   var page3Duration = "150%";
   var page3Offset = "50%";
+  var page3ScrollDuration = "120%";
   var page3ScrollOffset = page3Offset;
 } else if ($(window).width() > 1024 && $(window).width() < 1420) {
   var page3Duration = "150%";
   var page3Offset = "0%";
+  var page3ScrollDuration = "120%";
   var page3ScrollOffset = page3Offset;
 } else if ($(window).width() >= 800 && $(window).width() <= 1024) {
   var page3Duration = "130%";
   var page3Offset = "0%";
-  var page3ScrollOffset = "0%";
+  var page3ScrollDuration = "100%";
+  var page3ScrollOffset = page3Offset;
 } else if ($(window).width() < 800) {
-  var page3Duration = "90%";
-  var page3Offset = "30%";
+  var page3Duration = "110%";
+  var page3Offset = "0%";
+  var page3ScrollDuration = "70%";
   var page3ScrollOffset = page3Offset;
 }
 
@@ -38,7 +45,7 @@ var tweenLeft = TweenMax.to(
 );
 var scene2 = new ScrollMagic.Scene({
   triggerElement: "#page3-trigger2",
-  duration: page3Duration,
+  duration: page3ScrollDuration,
   offset: page3ScrollOffset,
 })
   .setTween(tweenLeft)
@@ -53,7 +60,7 @@ var tweenRight = TweenMax.to(
 );
 var scene3 = new ScrollMagic.Scene({
   triggerElement: "#page3-trigger2",
-  duration: page3Duration,
+  duration: page3ScrollDuration,
   offset: page3ScrollOffset,
 })
   .setTween(tweenRight)
