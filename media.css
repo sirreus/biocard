@@ -787,9 +787,10 @@ html {
     top: 55vh;
   }
   .page7-top-svg {
-    transform: translateX(-3030px);
+    padding-top: 3px;
+    transform: translateX(-3035px);
     background-size: contain;
-    height: 50vh;
+    height: 52vh;
   }
   .fishRightPage7 {
     transform: translateX(-1315px);
@@ -797,7 +798,7 @@ html {
   .page7-bottom-svg {
     transform: translateX(-1365px);
     background-size: contain;
-    height: 50vh;
+    height: 52vh;
   }
   .fishLeftPage7 {
     transform: translateX(-2980px);
