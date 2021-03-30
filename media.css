@@ -625,7 +625,7 @@ html {
     height: 278.7px;
   }
   .page3-title-wrapper1 {
-    left: -530px;
+    left: -570px;
   }
   .page3-title-text1 {
     font-size: 100px;
@@ -645,7 +645,7 @@ html {
   }
   .fishLeftFull {
     right: initial;
-    left: -800px;
+    left: -860px;
   }
 
   ._parallax-bg-man {
@@ -787,20 +787,20 @@ html {
     top: 55vh;
   }
   .page7-top-svg {
-    transform: translateX(-2990px);
+    transform: translateX(-3030px);
     background-size: contain;
     height: 50vh;
   }
   .fishRightPage7 {
-    transform: translateX(-1405px);
+    transform: translateX(-1315px);
   }
   .page7-bottom-svg {
-    transform: translateX(-1450px);
+    transform: translateX(-1365px);
     background-size: contain;
     height: 50vh;
   }
   .fishLeftPage7 {
-    transform: translateX(-2945px);
+    transform: translateX(-2980px);
   }
   .zoomed {
     transform: scale(35) translateY(-1.5%) translateX(1.5%);
