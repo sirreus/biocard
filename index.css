@@ -89,7 +89,6 @@
   content: "";
   position: absolute;
   top: -50%;
-  /* left: 30%; */
   left: 50%;
   transform: translate(-50%, 0);
   background: url(./assets/building_small.png) no-repeat center center;
@@ -118,6 +117,7 @@
 }
 
 .start-page {
+  height: 100vh;
   background: url(./assets/bg.png) no-repeat center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -295,11 +295,11 @@
 }
 #page3-trigger1 {
   position: absolute;
-  top: 16%;
+  top: 45vh;
 }
 #page3-trigger2 {
   position: absolute;
-  top: 32%;
+  top: 100vh;
 }
 .page3-title-wrapper1 {
   position: absolute;

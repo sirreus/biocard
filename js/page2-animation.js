@@ -34,7 +34,9 @@ if ($(window).width() > 760) {
     .addIndicators()
     .addTo(controller);
 
-  if ($(window).width() > 1024 && $(window).width() < 1440) {
+  if ($(window).width() > 1440) {
+    var page2TextUpDuration = "85%";
+  } else if ($(window).width() > 1024 && $(window).width() < 1440) {
     var page2TextUpDuration = "65%";
   } else if ($(window).width() >= 800 && $(window).width() <= 1024) {
     var page2TextUpDuration = "60%";
