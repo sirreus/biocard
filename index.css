@@ -127,7 +127,7 @@
 }
 
 ._grey {
-  background-color: #eae9ed;
+  background-color: #ededed;
 }
 ._blue {
   background: #092847;
@@ -202,19 +202,19 @@
 }
 #page2-trigger0 {
   position: absolute;
-  top: 25%;
+  top: 50vh;
 }
 #page2-trigger1 {
   position: absolute;
-  top: 37%;
+  top: 70vh;
 }
 #page2-trigger2 {
   position: absolute;
-  top: 48%;
+  top: 85vh;
 }
 #page2-trigger3 {
   position: absolute;
-  top: 59%;
+  top: 100vh;
 }
 .page2-mobile-title {
   display: none;
@@ -226,7 +226,7 @@
   width: 50%;
 }
 .page2-title {
-  margin: 0 0 10% 0;
+  margin: 0 0 20% 0;
   font-family: "Biocad_Display-Bold";
   font-size: 60px;
   font-weight: 700;
@@ -245,39 +245,24 @@
 .page2-photo1 {
   position: absolute;
   opacity: 0;
-  height: 355px;
-  width: 306px;
+  width: 75%;
+  height: auto;
   transform: rotate(-6.7deg);
-  background: url(./assets/page2-photo1.png) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   transition: opacity 0.7s ease;
 }
 .page2-photo2 {
   position: absolute;
   opacity: 0;
-  height: 340px;
-  width: 404px;
+  width: 100%;
+  height: auto;
   transform: rotate(11.46deg);
-  background: url(./assets/page2-photo2.png) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   transition: opacity 0.7s ease;
 }
 .page2-photo3 {
-  height: 313px;
-  width: 306px;
+  width: 70%;
+  height: auto;
   opacity: 0;
   transform: rotate(4.58deg);
-  background: url(./assets/page2-photo3.png) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   transition: opacity 0.7s ease;
 }
 .page2-text-wrapper {
