@@ -705,9 +705,10 @@
 
 .page10-content-block {
   position: relative;
-  padding: 354px 0;
+  padding: 35vh 0;
 }
 .page10-text-wrapper {
+  padding-bottom: 65vh;
   height: 192px;
   width: 814px;
   margin: auto;
@@ -727,7 +728,15 @@
 }
 #page10-trigger1 {
   position: absolute;
-  top: 30%;
+  top: 40vh;
+}
+#page10-trigger2 {
+  position: absolute;
+  top: 45vh;
+}
+#page10-trigger3 {
+  position: absolute;
+  top: 110vh;
 }
 
 /* global modifications */

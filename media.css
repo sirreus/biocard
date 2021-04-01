@@ -41,6 +41,30 @@ html {
   #page3-trigger1 {
     top: 52vh;
   }
+
+  .page7-top-svg {
+    height: 50vh;
+    padding-top: 1px;
+    transform: translateX(-62%);
+    background-size: 110%;
+  }
+  .fishRightPage7 {
+    -webkit-transform: translateX(-35.5%);
+    transform: translateX(-31.5%);
+  }
+  .page7-bottom-svg {
+    height: 50vh;
+    transform: translateX(-1%);
+    background-size: 110%;
+  }
+  .fishLeftPage7 {
+    -webkit-transform: translateX(-35.5%);
+    transform: translateX(-31.5%);
+  }
+  .zoomed {
+    -webkit-transform: scale(30) translateY(-22.5%) translateX(-10%);
+    transform: scale(30) translateY(-20%) translateX(2.8%);
+  }
 }
 
 /* стили для 13 дюймовых мониторов и новых планшетов */
@@ -267,7 +291,7 @@ html {
   }
 
   .page10-content-block._content-padding {
-    padding: 45vh 60px;
+    padding: 35vh 0;
   }
   .page10-text-wrapper {
     height: auto;
@@ -882,7 +906,7 @@ html {
   }
 
   .page10-content-block._content-padding {
-    padding: 50vh 60px;
+    padding: 30vh 60px;
   }
   .page10-text-wrapper {
     height: auto;
