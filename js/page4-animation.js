@@ -39,7 +39,7 @@ var scene4 = new ScrollMagic.Scene({
 var titleBlock = document.getElementById("page4-title-block");
 var scene5 = new ScrollMagic.Scene({
   triggerElement: "#page4-trigger2",
-  duration: "15%",
+  duration: "20%",
 })
   .setPin(titleBlock)
   .addIndicators({ name: "pin title block" })
