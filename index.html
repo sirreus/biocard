@@ -2,8 +2,8 @@
 
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="index.css" />
@@ -11,28 +11,54 @@
     <link rel="stylesheet" href="media.css" />
 
     <script type="text/javascript" src="animation-libs/jquery.min.js"></script>
-	  <script type="text/javascript" src="animation-libs/highlight.pack.js"></script>
-	  <script type="text/javascript" src="animation-libs/modernizr.custom.min.js"></script>
-	  <script type="text/javascript" src="animation-libs/TweenMax.min.js"></script>
-	  <script type="text/javascript" src="animation-libs/ScrollMagic.js"></script>
-	  <script type="text/javascript" src="animation-libs/animation.gsap.js"></script>
-    <script type="text/javascript" src="animation-libs/animation.velocity.js"></script>
-	  <script type="text/javascript" src="animation-libs/debug.addIndicators.js"></script>
+    <script
+      type="text/javascript"
+      src="animation-libs/highlight.pack.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="animation-libs/modernizr.custom.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="animation-libs/TweenMax.min.js"
+    ></script>
+    <script type="text/javascript" src="animation-libs/ScrollMagic.js"></script>
+    <script
+      type="text/javascript"
+      src="animation-libs/animation.gsap.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="animation-libs/animation.velocity.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="animation-libs/debug.addIndicators.js"
+    ></script>
   </head>
 
   <body>
     <header>
       <div class="header fadeonload">
         <img class="logo" src="./assets/logo-white.svg" />
-        <div type="button" id="menu-button" class="burger-button __to-open"></div>
+        <div
+          type="button"
+          id="menu-button"
+          class="burger-button __to-open-white"
+        ></div>
       </div>
     </header>
 
     <main class="main">
       <section id="menu" class="burger-menu">
         <div class="link-list">
-          <a class="link" href="#step1">рождение BIOCARD<sup class="link-year">2001</sup></a>
-          <a class="link">набирая обороты<sup class="link-year">2004-2010</sup></a>
+          <a class="link" href="#step1"
+            >рождение BIOCARD<sup class="link-year">2001</sup></a
+          >
+          <a class="link"
+            >набирая обороты<sup class="link-year">2004-2010</sup></a
+          >
           <a class="link">новые горизонты</a>
           <a class="link">экспансия</a>
           <a class="link">наука и бизнес</a>
@@ -42,56 +68,78 @@
       </section>
 
       <section class="page start-page _content-padding">
-          <script>
-            function goToNextPage() {
-              var y = $(window).scrollTop();
-              $('html, body').animate({ scrollTop: y + 965 }, 'slow')
-            }
-          </script>
-          <div class="start-page-content-wrapper">
-            <div class="start-page-title-wrapper">
-              <p class="start-page-title fadeonload">Мы помним, как все начиналось</p>
-            </div>
-            <div class="start-page-text-wrapper">
-              <p class="start-page-text fadeonload">
-                В нашей истории было много замечательных моментов
-              </p>
-              <div class="arrow-button fadeonload" type="button" onclick="goToNextPage()"></div>
-            </div>
+        <script>
+          function goToNextPage() {
+            var y = $(window).scrollTop();
+            $("html, body").animate({ scrollTop: y + 965 }, "slow");
+          }
+        </script>
+        <div class="start-page-content-wrapper">
+          <div class="start-page-title-wrapper">
+            <p class="start-page-title fadeonload">
+              Мы помним, как все начиналось
+            </p>
           </div>
+          <div class="start-page-text-wrapper">
+            <p class="start-page-text fadeonload">
+              В нашей истории было много замечательных моментов
+            </p>
+            <div
+              class="arrow-button fadeonload"
+              type="button"
+              onclick="goToNextPage()"
+            ></div>
+          </div>
+        </div>
       </section>
 
-      <section class="page _content-padding _grey">
+      <section class="page _content-padding _grey" id="first-grey-page">
         <div class="page2-content-block _pb50">
           <div id="page2-trigger0" class="spacer s0"></div>
           <div id="page2-trigger1" class="spacer s0"></div>
           <div id="page2-trigger2" class="spacer s0"></div>
           <div id="page2-trigger3" class="spacer s0"></div>
           <div class="page2-mobile-title">
-            <p class="page2-mobile-title-text fade">Из хаоса к порядку: рождение BIOCAD</p>
+            <p class="page2-mobile-title-text fade">
+              Из хаоса к порядку: рождение BIOCAD
+            </p>
           </div>
           <div id="page2-title-wrapper" class="page2-title-wrapper">
             <p class="page2-title fade">Из хаоса к порядку: рождение BIOCAD</p>
             <div class="page2-img-wrapper">
-              <img id="page2-photo1" class="page2-photo1" src="./assets/page2-photo1.png"/>
-              <img id="page2-photo2" class="page2-photo2" src="./assets/page2-photo2.png"/>
-              <img id="page2-photo3" class="page2-photo3" src="./assets/page2-photo3.png" />
+              <img
+                id="page2-photo1"
+                class="page2-photo1"
+                src="./assets/page2-photo1.png"
+              />
+              <img
+                id="page2-photo2"
+                class="page2-photo2"
+                src="./assets/page2-photo2.png"
+              />
+              <img
+                id="page2-photo3"
+                class="page2-photo3"
+                src="./assets/page2-photo3.png"
+              />
             </div>
           </div>
           <div id="page2-text-wrapper" class="page2-text-wrapper">
             <p class="page2-text">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Сегодня BIOCAD — инновационная биотехнологическая компания полного
-              цикла, признанная во всём мире.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Сегодня
+              BIOCAD — инновационная биотехнологическая компания полного цикла,
+              признанная во всём мире.
             </p>
             <img class="line" src="./assets/line.svg" />
             <p class="page2-text">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Но ещё 20 лет назад, её не существовало, как и фармацевтической
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Но
+              ещё 20 лет назад, её не существовало, как и фармацевтической
               отрасли в нашей стране.
             </p>
             <img class="line" src="./assets/line.svg" />
             <p class="page2-text">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Однако, в смутной России прошлого нашёлся человек, у которого была
-              мечта.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Однако,
+              в смутной России прошлого нашёлся человек, у которого была мечта.
             </p>
           </div>
         </div>
@@ -123,34 +171,39 @@
               </div>
               <div class="page4-title2-wrapper">
                 <p id="page4-title2" class="page4-title2-text">Морозов</p>
-                <p id="page4-subtitle" class="page4-subtitle">генеральный директор и основатель BIOCAD</p>
+                <p id="page4-subtitle" class="page4-subtitle">
+                  генеральный директор и основатель BIOCAD
+                </p>
               </div>
             </div>
-            
+
             <div id="page4-trigger3" class="spacer s0"></div>
             <div id="page4-trigger4" class="spacer s0"></div>
             <div id="page4-trigger5" class="spacer s0"></div>
             <div id="page4-text-wrapper" class="page4-text-wrapper">
               <p id="page4-text" class="page4-text">
-                “&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Прежде чем основать компанию, я работал в банке и в целом
-                заработать сумел. Многие люди в моем тогдашнем положении просто ушли
-                бы на пенсию. Но мне хотелось изменить мир, а с тёплых островов
-                заниматься этим не совсем удобно. Компанию я начал строить, очень
-                плохо представляя себе специфику фармацевтического бизнеса.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“
+                “&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Прежде
+                чем основать компанию, я работал в банке и в целом заработать
+                сумел. Многие люди в моем тогдашнем положении просто ушли бы на
+                пенсию. Но мне хотелось изменить мир, а с тёплых островов
+                заниматься этим не совсем удобно. Компанию я начал строить,
+                очень плохо представляя себе специфику фармацевтического
+                бизнеса.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="page _content-padding _pr75 _grey"">
+      <section class="page _content-padding _pr75 _grey">
         <div class="page5-content-wrapper">
           <div class="page5-left-block">
             <div class="page5-img fade"></div>
             <div class="page5-text-wrapper">
               <p class="page5-subtitle fade">Дмитрий Морозов:</p>
               <p class="page5-title fade">
-                “&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В 90-ые и начале нулевых российская промышленность лежала в
+                “&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В
+                90-ые и начале нулевых российская промышленность лежала в
                 руинах.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“
               </p>
               <p class="page5-text fade">
@@ -168,26 +221,29 @@
         </div>
       </section>
 
-      <section class="page _content-padding-small _grey"">
+      <section class="page _content-padding-small _grey" id="last-grey-page">
         <div class="page6-content-wrapper">
           <div class="page6-left-block">
             <p class="page6-title fade">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Весной 2001 дела в Институте иммунологии шли настолько плохо, что один
-              из корпусов был выставлен на торги.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Весной
+              2001 дела в Институте иммунологии шли настолько плохо, что один из
+              корпусов был выставлен на торги.
             </p>
             <div id="page6-trigger1" class="spacer s0"></div>
             <div class="page6-text-wrapper">
               <p class="page6-text fade">
-                Ведь, периодически Институт получал гранты от МНТЦ — международной
-                организации, которая занималась утилизацией биологического оружия,
-                но спонсировалась Государственным департаментом США.
+                Ведь, периодически Институт получал гранты от МНТЦ —
+                международной организации, которая занималась утилизацией
+                биологического оружия, но спонсировалась Государственным
+                департаментом США.
               </p>
               <p class="page6-text fade">
-                Удивительно, что всего за 20 дет до этого, в засекреченном Институте
-                проводили исследования возбудителей чумы и разрабатывали способы
-                защиты от бактеорологического оружия на базе интерферона — белка,
-                который помогает клеткам бороться с вторжениями вирусов,
-                бактериальных веществ и низкомолекулярных химических соединений.
+                Удивительно, что всего за 20 дет до этого, в засекреченном
+                Институте проводили исследования возбудителей чумы и
+                разрабатывали способы защиты от бактеорологического оружия на
+                базе интерферона — белка, который помогает клеткам бороться с
+                вторжениями вирусов, бактериальных веществ и низкомолекулярных
+                химических соединений.
               </p>
             </div>
             <div class="page6-ngramma"></div>
@@ -218,7 +274,10 @@
         <div class="page9-content-block _content-padding">
           <div id="page9-trigger1" class="spacer s0"></div>
           <div class="page9-left-block">
-            <img src="./assets/building_small.png" class="page9-img-building-small fade" />
+            <img
+              src="./assets/building_small.png"
+              class="page9-img-building-small fade"
+            />
             <img src="./assets/lady_page9.png" class="page9-img-lady fade" />
           </div>
           <div class="page9-right-block">
@@ -265,40 +324,6 @@
         </div>
       </section>
 
-      <script id="toggle-open-burger-menu">
-        $(document).ready(function() {
-          $("#menu-button").click(function () {
-            $(this).toggleClass("__to-open")
-
-            if($(this).hasClass("__to-open")) {
-              $("#menu").slideUp( "slow", function() {
-                $("#menu").css("display", "none");
-              });
-              $(".logo").attr("src", "./assets/logo-white.svg");
-            } else {
-              $("#menu").slideDown( "slow", function() {
-              });
-              $(".logo").attr("src", "./assets/logo-black.svg");
-            }
-          });
-        });
-      </script>
-
-      <script id="hide-burger-menu-by-click-on-link">
-        $(document).ready(function() {
-          $(".link").click(function () {
-            $("#menu-button").toggleClass("__to-open")
-
-            if($("#menu-button").hasClass("__to-open")) {
-              $("#menu").slideUp( "slow", function() {
-                $("#menu").css("display", "none");
-              });
-              $(".logo").attr("src", "./assets/logo-white.svg");
-            }
-          });
-        });
-      </script>
-
       <script type="text/javascript" src="js/page2-animation.js"></script>
       <script type="text/javascript" src="js/page3-animation.js"></script>
       <script type="text/javascript" src="js/page4-animation.js"></script>
@@ -307,7 +332,21 @@
       <script type="text/javascript" src="js/page9-animation.js"></script>
       <script type="text/javascript" src="js/page10-animation.js"></script>
       <script type="text/javascript" src="js/fadeIn-effect.js"></script>
-      <script type="text/javascript" src="js/smooth-scroll-animation.js"></script>
+
+      <script
+        type="text/javascript"
+        src="js/smooth-scroll-animation.js"
+      ></script>
+
+      <script
+        type="text/javascript"
+        src="js/toggle-open-burger-menu.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="js/hide-burger-menu-by-click-on-link.js"
+      ></script>
+      <script type="text/javascript" src="js/toggle-logo-color.js"></script>
     </main>
   </body>
 </html>

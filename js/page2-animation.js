@@ -34,14 +34,14 @@ if ($(window).width() > 760) {
     .addIndicators()
     .addTo(controller);
 
-  if ($(window).width() > 1440) {
-    var page2TextUpDuration = "85%";
-  } else if ($(window).width() > 1024 && $(window).width() < 1440) {
+  if ($(window).width() >= 1440 && $(window).width() < 1680) {
+    var page2TextUpDuration = "75%";
+  } else if ($(window).width() >= 1024 && $(window).width() < 1440) {
     var page2TextUpDuration = "65%";
-  } else if ($(window).width() >= 800 && $(window).width() <= 1024) {
+  } else if ($(window).width() >= 800 && $(window).width() < 1024) {
     var page2TextUpDuration = "60%";
   } else {
-    var page2TextUpDuration = "65%";
+    var page2TextUpDuration = "85%";
   }
   var scene = new ScrollMagic.Scene({
     triggerElement: "#page2-trigger0",

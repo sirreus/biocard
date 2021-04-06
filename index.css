@@ -32,8 +32,12 @@
   -o-background-size: cover;
   background-size: cover;
 }
-.__to-open {
-  background: url(./assets/burger.svg) no-repeat center center;
+.__to-open-white {
+  background: url(./assets/burger-white.svg) no-repeat center center;
+}
+
+.__to-open-black {
+  background: url(./assets/burger-black.svg) no-repeat center center;
 }
 
 .burger-menu {
@@ -99,21 +103,6 @@
   width: 266px;
   height: 184px;
   z-index: -1;
-}
-.link-img {
-  position: absolute;
-  background: url(./assets/building_small.png) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  opacity: 1;
-}
-.link:hover .link-img {
-  width: 366px;
-  height: 284px;
-  opacity: 1;
-  z-index: 1;
 }
 
 .start-page {
