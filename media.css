@@ -16,6 +16,12 @@ html {
 
 /* стили для FullHD */
 @media screen and (min-width: 1920px) {
+  .burger-menu {
+    padding: 20vh 0;
+  }
+  .start-page-content-wrapper {
+    padding: 300px 0;
+  }
   .page7-top-svg {
     height: 50vh;
     transform: translateX(-59%);
@@ -39,6 +45,9 @@ html {
 
 /* стили для MacBook 16' */
 @media screen and (min-width: 1680px) and (max-width: 1919px) {
+  .burger-menu {
+    padding: 195px 0;
+  }
   .start-page-title {
     font-size: 150px;
   }
@@ -93,6 +102,12 @@ html {
 
 /* стили для 13 дюймовых мониторов и новых планшетов */
 @media screen and (min-width: 1025px) and (max-width: 1439px) {
+  .burger-menu {
+    padding: 135px 0;
+  }
+  .link {
+    font-size: 55px;
+  }
   .start-page-title-wrapper {
     width: 700px;
     height: auto;
