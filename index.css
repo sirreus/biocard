@@ -591,6 +591,7 @@
   overflow: hidden;
 }
 .zoomed {
+  -webkit-transform: scale(30) translateY(-21%) translateX(2.65%);
   transform: scale(30) translateY(-21%) translateX(2.65%);
 }
 .page7-top-svg {

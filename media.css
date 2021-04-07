@@ -14,7 +14,31 @@ html {
   height: 1600px;
 }
 
-@media screen and (min-width: 1680px) {
+/* стили для FullHD */
+@media screen and (min-width: 1920px) {
+  .page7-top-svg {
+    height: 50vh;
+    transform: translateX(-59%);
+    background-size: 120%;
+  }
+  .fishRightPage7 {
+    transform: translateX(-30%);
+  }
+  .page7-bottom-svg {
+    height: 50vh;
+    transform: translateX(-1%);
+    background-size: 120%;
+  }
+  .fishLeftPage7 {
+    transform: translateX(-30%);
+  }
+  .zoomed {
+    transform: scale(33) translateY(-21%) translateX(2.4%);
+  }
+}
+
+/* стили для MacBook 16' */
+@media screen and (min-width: 1680px) and (max-width: 1919px) {
   .start-page-title {
     font-size: 150px;
   }
@@ -62,8 +86,8 @@ html {
     transform: translateX(-31.5%);
   }
   .zoomed {
-    -webkit-transform: scale(30) translateY(-22.5%) translateX(-10%);
-    transform: scale(30) translateY(-20%) translateX(2.8%);
+    -webkit-transform: scale(30) translateY(-22%) translateX(3.5%);
+    transform: scale(30) translateY(-20%) translateX(2.85%);
   }
 }
 
