@@ -22,11 +22,13 @@ $(document).ready(function () {
       $("#menu").slideUp("slow", function () {
         $("#menu").css("display", "none");
       });
+      document.body.style.overflow = "auto";
       // вырезаем цвет из модификатора и используем для лого
       var color = modifier.split("__to-open-")[1];
       $(".logo").attr("src", `./assets/logo-${color}.svg`);
     } else {
       $("#menu").slideDown("slow", function () {});
+      document.body.style.overflow = "hidden";
       // для меню лого всегда ставим черное лого
       $(".logo").attr("src", "./assets/logo-black.svg");
     }

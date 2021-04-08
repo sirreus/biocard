@@ -16,6 +16,7 @@ $(document).ready(function () {
         $("#menu").slideUp("slow", function () {
           $("#menu").css("display", "none");
         });
+        document.body.style.overflow = "auto";
         $(".logo").attr("src", "./assets/logo-black.svg");
       }
     }
