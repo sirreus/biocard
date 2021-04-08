@@ -15,10 +15,12 @@ var scene1 = new ScrollMagic.Scene({
   .addIndicators({ name: "pin page" })
   .addTo(controller);
 
-if ($(window).width() >= 800) {
+if ($(window).width() >= 1680) {
+  var page7ScrollDuration = "43%";
+} else if ($(window).width() >= 800 && $(window).width() < 1680) {
   var page7ScrollDuration = "23%";
 } else {
-  var page7ScrollDuration = "42%";
+  var page7ScrollDuration = "43%";
 }
 
 var tweenLeft = TweenMax.to(
@@ -60,12 +62,3 @@ if ($(window).width() >= 800) {
     .addIndicators({ name: "zoom" })
     .addTo(controller);
 }
-
-// if($(window).width() < 800) {
-//   var animatedBlock = document.getElementById("page7-animated-block")
-//   var faded = TweenMax.to(animatedBlock, 1, {className: "+=__fadeOut"});
-//   var scene6 = new ScrollMagic.Scene({triggerElement: '#page7-trigger2', duration: '70%'})
-//     .setTween(faded)
-//     .addIndicators({name: "fade"})
-//     .addTo(controller)
-// }
