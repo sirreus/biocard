@@ -1,38 +1,17 @@
 var controller = new ScrollMagic.Controller();
 
 if ($(window).width() > 760) {
-  var photo1 = document.getElementById("page2-photo1");
-  var scene = new ScrollMagic.Scene({ triggerElement: "#page2-trigger1" })
-    .on("enter", function () {
-      photo1.style.opacity = "1";
+  var photos = ["#page2-photo1", "#page2-photo2", "#page2-photo3"];
+  photos.forEach((photo) => {
+    var magic = TweenMax.to(photo, 0.1, { className: "+=__visible" });
+    var number = photo.split("#page2-photo")[1];
+    new ScrollMagic.Scene({
+      triggerElement: `#page2-trigger${number}`,
     })
-    .on("leave", function () {
-      photo1.style.opacity = "0";
-    })
-    .addIndicators()
-    .addTo(controller);
-
-  var photo2 = document.getElementById("page2-photo2");
-  var scene = new ScrollMagic.Scene({ triggerElement: "#page2-trigger2" })
-    .on("enter", function () {
-      photo2.style.opacity = "1";
-    })
-    .on("leave", function () {
-      photo2.style.opacity = "0";
-    })
-    .addIndicators()
-    .addTo(controller);
-
-  var photo3 = document.getElementById("page2-photo3");
-  var scene = new ScrollMagic.Scene({ triggerElement: "#page2-trigger3" })
-    .on("enter", function () {
-      photo3.style.opacity = "1";
-    })
-    .on("leave", function () {
-      photo3.style.opacity = "0";
-    })
-    .addIndicators()
-    .addTo(controller);
+      .setTween(magic)
+      .addIndicators({ name: `show photo${number}` })
+      .addTo(controller);
+  });
 
   var windowHeight = $(window).height();
   var onePercentHeight = windowHeight / 100;
