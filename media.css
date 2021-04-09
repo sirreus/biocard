@@ -406,9 +406,6 @@ html {
     top: 42%;
   }
 
-  .page3-content-block {
-    padding: 140px 0 800px 0;
-  }
   .page3-title-wrapper1 {
     left: -1050px;
   }
@@ -650,7 +647,7 @@ html {
   .page2-content-block {
     flex-direction: column;
     align-items: flex-start;
-    padding: 40% 0 160% 0;
+    padding: 20vh 0 80vh 0;
   }
   .page2-mobile-title {
     display: flex;
@@ -702,9 +699,6 @@ html {
     width: 90vw;
   }
 
-  .page3-content-block {
-    padding: 25vh 0 45vh 0;
-  }
   .page3-img-wrapper {
     width: 272.12px;
     height: 278.7px;
